@@ -1,0 +1,41 @@
+
+.titlepage_containerLevel1
+{
+    height: 100%;
+    margin: 0px;
+}
+
+.titlepage__containerParent{
+
+    /* child elemek igazitasa a parentböl közepre*/
+    display: flex;
+    justify-content: center; /* vizszintesen közepre*/
+    align-items: center; /* függölegesen közepre */
+    height: 100vh;
+
+}
+
+.titlepage__containerChild{
+    width: 200px;
+}
+
+.titlepage__verticalLine{
+    border-left: 6px solid green;
+    height: 100px;
+}
+
+.link{
+
+}
+
+.link:hover{
+
+}
+
+.link--selected{
+
+}
+
+.link__titlepage{
+
+}
