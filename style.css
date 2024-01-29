@@ -29,7 +29,6 @@
     flex-direction: column; /* a linkek elrendezesere*/
 }
 
-
 .titlepage__verticalLine{
     width: 1px;
     height: 219px;
@@ -38,12 +37,33 @@
     margin-right: 50px;
 }
 
-.link{
+.font{
+    color: #FFF;
+    font-family: Roboto;
+}
+
+.font__Logo{
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 15px;
+    white-space: nowrap;
 
 }
 
-.link:hover{
+.font__Link{
+    font-size: 54px;
+    font-weight: 100;
+    line-height: normal;
+}
 
+.link{
+    text-decoration: none; /* megszünteti a default-alahuzast*/
+    color: inherit;  /* atveszi a szövegnek beallitott class-t a default ronda kék helyett*/
+}
+
+.link:hover{
+    opacity: 0.6;
+    transition: .1s;
 }
 
 .link--selected{
@@ -52,22 +72,4 @@
 
 .link__titlepage{
 
-}
-
-.font{
-    color: #FFF;
-    font-family: Roboto;
-    white-space: nowrap;
-}
-
-.font__Logo{
-    font-size: 64px;
-    font-weight: 900;
-    letter-spacing: 15px;
-}
-
-.font__Link{
-    font-size: 54px;
-    font-weight: 100;
-    line-height: normal;
 }
