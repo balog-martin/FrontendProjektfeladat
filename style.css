@@ -1,11 +1,11 @@
 
-.titlepage_containerLevel1
+.titlepage__body
 {
     height: 100%;
     margin: 0px;
 }
 
-.titlepage__containerParent{
+.titlepage__parentContainer{
 
     /* child elemek igazitasa a parentböl közepre*/
     display: flex;
@@ -15,7 +15,9 @@
 
 }
 
-.titlepage__containerChild{
+.titlepage__childContainer{
+    display: flex;
+    flex-direction: column;
     width: 200px;
 }
 
