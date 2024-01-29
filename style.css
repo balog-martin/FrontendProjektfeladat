@@ -6,13 +6,19 @@
 }
 
 .titlepage__parentContainer{
+    /* függöleg igazitas*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    /* child elemek igazitasa a parentböl közepre*/
+    /* child elemek igazitasa ehhez a parenthez kepest közepre*/
     display: flex;
     justify-content: center; /* vizszintesen közepre*/
     align-items: center; /* függölegesen közepre */
-    height: 100vh;
 
+    /* egyeb*/
+    height: 100px;
 }
 
 .titlepage__childContainer{
