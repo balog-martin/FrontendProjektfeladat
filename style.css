@@ -1,8 +1,12 @@
-
-.titlepage__body
-{
+.titlepage__body{
     height: 100%;
     margin: 0px;
+}
+
+.frame{
+    background: linear-gradient(117deg, #121215, #262629);
+    height: 100vh;
+    width: 100vw;
 }
 
 .titlepage__parentContainer{
@@ -18,18 +22,20 @@
     align-items: center; /* függölegesen közepre */
 
     /* egyeb*/
-    height: 100px;
 }
 
 .titlepage__childContainer{
     display: flex;
-    flex-direction: column;
-    width: 200px;
+    flex-direction: column; /* a linkek elrendezesere*/
 }
 
+
 .titlepage__verticalLine{
-    border-left: 6px solid green;
-    height: 100px;
+    width: 1px;
+    height: 219px;
+    background: #FFF;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .link{
@@ -46,4 +52,22 @@
 
 .link__titlepage{
 
+}
+
+.font{
+    color: #FFF;
+    font-family: Roboto;
+    white-space: nowrap;
+}
+
+.font__Logo{
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 15px;
+}
+
+.font__Link{
+    font-size: 54px;
+    font-weight: 100;
+    line-height: normal;
 }
