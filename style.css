@@ -39,6 +39,7 @@ body{
     font-family: Roboto;
 }
 
+
 .font__Logo{
     font-size: 64px;
     font-weight: 900;
@@ -51,6 +52,10 @@ body{
     font-size: 54px;
     font-weight: 100;
     line-height: normal;
+}
+
+.font__Link--NavBar{
+    font-size: 20px;
 }
 
 .link{
@@ -69,4 +74,38 @@ body{
 
 .link__titlepage{
 
+}
+
+/* ******************************** */
+/* ********** Navigacio *********** */
+/* ******************************** */
+header{
+        
+    /* child elemek igazitasa ehhez a parenthez kepest*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+
+    /*egyeb*/
+    padding: 0px 32px;
+    height: 80px;
+    border-bottom: 1px solid #FFF;
+}
+
+.navigation__FlexChild{
+
+}
+
+
+.navigation__LogoContainer{
+    flex: 2;
+}
+
+.navigation__LinkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
