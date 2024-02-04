@@ -114,7 +114,6 @@ header{
 /* ****** Oldal: Céginformáció **** */
 /* ******************************** */
 .weBuildWebsites__Container{
-    width: 1440px;
     height: 471px;
     margin-left: 80px;
     margin-right: 80px;   
@@ -129,18 +128,25 @@ header{
     /*Parent-child viszony*/
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: flex-end;
+    
+    position: relative; /* A link class-a miatt szükseges beallitas*/
 }
 
 .weBuildWebsites__Text{
     font-size: 120px;
-    font-weight: 400;
-    margin-left: 444px;
+    font-weight: 400; 
+    margin-right: calc(189px - 80px);
+    width: 724px; /* a reszponzivitashoz kenytelen voltam egy fix szelesseget megadni*/
 }
 
-.weBuildWebsites__Link{
+.weBuildWebsites__Link{ /* ez nem követi a flexbox szabalyait */
     font-size: 24px;
     text-decoration-line: underline;
     text-wrap: nowrap;
-    align-self: flex-end;
+    
+    /* Jobb-alulra igazitas. Forras: https://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right */
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
