@@ -109,3 +109,38 @@ header{
     align-items: center;
     gap: 50px;
 }
+
+/* ******************************** */
+/* ****** Oldal: Céginformáció **** */
+/* ******************************** */
+.weBuildWebsites__Container{
+    width: 1440px;
+    height: 471px;
+    margin-left: 80px;
+    margin-right: 80px;   
+    margin-top: 71px; /*calc(70px - 32px);*/
+    margin-bottom: 80px;
+
+    /*Background-image*/
+    background-image: url(img/image1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /*Parent-child viszony*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weBuildWebsites__Text{
+    font-size: 120px;
+    font-weight: 400;
+    margin-left: 444px;
+}
+
+.weBuildWebsites__Link{
+    font-size: 24px;
+    text-decoration-line: underline;
+    text-wrap: nowrap;
+    align-self: flex-end;
+}
