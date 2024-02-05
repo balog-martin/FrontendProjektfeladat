@@ -172,12 +172,10 @@ header{
 
 .aboutUs__ConatinerComponent{
     display: flex;
-    /*justify-content: center;
+    justify-content: center;
     align-items: flex-start;
     align-self: stretch;
-    gap: 73px;*/
-
-    justify-content: space-evenly;
+    gap: 73px;
 }
 
 .aboutUs__Component{
@@ -189,6 +187,10 @@ header{
     align-items: center;
     gap: 50px;
     align-self: stretch;
+
+    
+    /* A ComponentName jobb-alulra igazitasahoz.*/
+    position: relative;
 }
 
 .aboutUs__ComponentImg{
@@ -208,4 +210,9 @@ header{
     color: #7000A0;
     font-size: 24px;
     font-weight: 400;
+
+    /* Jobb-alulra igazitas. Forras: https://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right */
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
