@@ -238,3 +238,24 @@ header{
     font-size: 24px;
     font-weight: 400;
 }
+
+footer{
+    height: 291px;
+    background: linear-gradient(90deg, #7000A0 0.01%, #A0009B 100%);
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer__Text{
+    font-size: 120px;
+    font-weight: 400;
+    letter-spacing: 200px;
+    margin-right: -200px;
+    
+    text-align: center;
+    justify-content: center; /* vizszintesen közepre*/
+    align-items: center; /* függölegesen közepre */
+    
+    margin: auto;
+}
