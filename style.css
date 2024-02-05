@@ -187,8 +187,9 @@ header{
     align-items: center;
     gap: 50px;
     align-self: stretch;
+    flex-grow: 1; /* Adaptivitas, külön hozzaadva. 1440px szelesseg felett a komponensek egyenlö aranyban töltik ki a parent div-et a kepernyö szelessegetöl függöen.*/
+    /* TODO: 1440-es szelesseg alatti meretekre az adaptivitas/reszponzivitas meg hianyzik!*/
 
-    
     /* A ComponentName jobb-alulra igazitasahoz.*/
     position: relative;
 }
