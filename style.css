@@ -39,7 +39,6 @@ body{
     font-family: Roboto;
 }
 
-
 .font__Logo{
     font-size: 64px;
     font-weight: 900;
@@ -79,8 +78,7 @@ body{
 /* ******************************** */
 /* ********** Navigacio *********** */
 /* ******************************** */
-header{
-        
+header{     
     /* child elemek igazitasa ehhez a parenthez kepest*/
     display: flex;
     justify-content: space-between;
@@ -216,4 +214,27 @@ header{
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.introduction__Container{
+    margin-left: 107px;
+    margin-right: 107px;
+    margin-top: 80px;
+    margin-bottom: 89px;
+
+    /*width: 1226px;*/ /* adaptivitas miatt kikommentelve*/
+    /*height: 603px;*/ /* adaptivitas miatt kikommentelve*/
+    flex-shrink: 0;
+}
+
+.introduction__Title{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+
+.introduction__Content{
+    font-size: 24px;
+    font-weight: 400;
 }
