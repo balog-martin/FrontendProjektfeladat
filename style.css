@@ -91,12 +91,10 @@ header{
     border-bottom: 1px solid #FFF;
 }
 
-.navigation__FlexChild{
-
-}
-
-.navigation__LogoContainer{
+.navigation__Logo{
     flex: 2;
+    font-size: 40px;
+    font-weight: 100;
 }
 
 .navigation__LinkContainer{
@@ -286,7 +284,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    gap: 70px;
+    gap: 7px;
     flex-wrap: wrap;
     max-width: 1730px; /* különben 1. sorban 4, 2. sorban 2 komponens lesz*/
     
