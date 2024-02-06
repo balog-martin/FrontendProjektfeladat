@@ -96,7 +96,6 @@ header{
 
 }
 
-
 .navigation__LogoContainer{
     flex: 2;
 }
@@ -106,6 +105,28 @@ header{
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+
+/* ******************************** */
+/* ********** Footer ************** */
+/* ******************************** */
+footer{
+    height: 291px;
+    background: linear-gradient(90deg, #7000A0 0.01%, #A0009B 100%);
+
+    position: relative;
+}
+
+.footer__Text{
+    font-size: 120px;
+    font-weight: 400;
+    letter-spacing: 200px;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ******************************** */
@@ -239,21 +260,51 @@ header{
     font-weight: 400;
 }
 
-footer{
-    height: 291px;
-    background: linear-gradient(90deg, #7000A0 0.01%, #A0009B 100%);
+/* ******************************** */
+/* ****** Oldal: Szolgaltatasok *** */
+/* ******************************** */
 
-    position: relative;
+.ourServices__Title{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 47px;
+    margin-top: 80px;
+    margin-bottom: 89px;
+    text-align: center;
 }
 
-.footer__Text{
-    font-size: 120px;
-    font-weight: 400;
-    letter-spacing: 200px;
-    
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.ourServices__ComponentContainer{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 73px;
+    flex-wrap: wrap;
+}
+
+.ourServices__Component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 379px;
+}
+
+.ourServices__ComponentIcon{
+    width: 123.459px;
+    height: 64px;
+}
+
+.ourServices__ComponentTitle{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ourServices__ComponentText{
+    font-size: 24px;
+    font-weight: 400;  
 }
