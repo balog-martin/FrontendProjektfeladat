@@ -1,7 +1,13 @@
+:root{
+    /* Theme Dark*/
+    --themeDark-bg: linear-gradient(117deg, #121215, #262629)
+
+    /* Theme Dark*/
+}
+
 body{
     margin: 0px;
-    background: linear-gradient(117deg, #121215, #262629);
-    height: 100vh;
+    background: var(--themeDark-bg);
     width: 100vw;
 }
 
@@ -18,6 +24,9 @@ body{
     align-items: center; /* függölegesen közepre */
 
     /* egyeb*/
+    background: var(--themeDark-bg);
+    height: 100%;
+    width: 100%;
 }
 
 .titlepage__childContainer{
@@ -284,9 +293,9 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    gap: 7px;
+    gap: 70px;
     flex-wrap: wrap;
-    max-width: 1730px; /* különben 1. sorban 4, 2. sorban 2 komponens lesz*/
+    max-width: 1720px; /* különben 1. sorban 4, 2. sorban 2 komponens lesz*/
     
 }
 
