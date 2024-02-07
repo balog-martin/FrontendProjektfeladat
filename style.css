@@ -1,8 +1,13 @@
 :root{
     /* Theme Dark*/
-    --themeDark-bg: linear-gradient(117deg, #121215, #262629)
+    --themeDark-bg: linear-gradient(117deg, #121215, #262629);
 
-    /* Theme Dark*/
+    /* Theme light*/
+    
+
+    /* General */
+    --colorLight: #FFF;
+    --colorDark: #000;
 }
 
 body{
@@ -93,7 +98,6 @@ header{
     align-items: center;
     flex-shrink: 0;
 
-
     /*egyeb*/
     padding: 0px 32px;
     height: 80px;
@@ -152,20 +156,24 @@ footer{
 }
 
 .generalSection__ContentContainer{
-    margin-bottom: 80px;
-
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 70px;
     max-width: 1720px; /* különben 1. sorban 4, 2. sorban 2 komponens lesz*/
+    margin-bottom: 80px;
 }
 
 .generalSection__Margin{
     margin-top: 80px;
     margin-left: 80px;
     margin-right: 80px;
+}
+
+.invertedColors{
+    background-color: var(--colorLight);
+    color: var(--colorDark);
 }
 
 /* ******************************** */
@@ -259,7 +267,6 @@ footer{
 
 .aboutUs__ComponentText{
     width: 378px;
-    color: #000;
     font-size: 30px;
     font-style: italic;
     font-weight: 400;
@@ -297,6 +304,7 @@ footer{
 .introduction__Content{
     font-size: 24px;
     font-weight: 400;
+    gap: 0;
 }
 
 /* ******************************** */
