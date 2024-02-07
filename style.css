@@ -161,7 +161,6 @@ footer{
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 70px;
-    max-width: 1720px; /* különben 1. sorban 4, 2. sorban 2 komponens lesz*/
     margin-bottom: 80px;
 }
 
@@ -177,11 +176,12 @@ footer{
 }
 
 .generalSection__Component{
+    /* Parent szerep*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 379px;
 }
-
 
 /* ******************************** */
 /* ****** Oldal: Céginformáció **** */
@@ -251,19 +251,18 @@ footer{
     gap: 73px;
 }*/
 
-.aboutUs__Component{
-    /* Child szerep (parent: aboutUs__ConatinerComponent) */
+.aboutUs__ContentContainer{
+    max-width: 1800px;
+}
 
-    /* Parent szerep*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.aboutUs__Component{
     gap: 50px;
-    align-self: stretch;
-    flex-grow: 1; /* Adaptivitas, külön hozzaadva. 1440px szelesseg felett a komponensek egyenlö aranyban töltik ki a parent div-et a kepernyö szelessegetöl függöen.*/
+    /*flex-grow: 1;*/ /* Adaptivitas, külön hozzaadva. 1440px szelesseg felett a komponensek egyenlö aranyban töltik ki a parent div-et a kepernyö szelessegetöl függöen.*/
     /* TODO: 1440-es szelesseg alatti meretekre az adaptivitas/reszponzivitas meg hianyzik!*/
 
+    
     /* A ComponentName jobb-alulra igazitasahoz.*/
+    align-self: stretch;
     position: relative;
 }
 
@@ -344,12 +343,15 @@ footer{
     align-items: flex-start;
     gap: 70px;
     flex-wrap: wrap;
-    max-width: 1720px; különben 1. sorban 4, 2. sorban 2 komponens lesz
 } */
+
+.ourServices__ContentContainer
+{
+    max-width: 1720px; /*különben 1. sorban 4, 2. sorban 2 komponens lesz*/
+}
 
 .ourServices__Component{
     gap: 32px;
-    width: 379px;
 }
 
 .ourServices__ComponentIcon{
