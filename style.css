@@ -136,6 +136,39 @@ footer{
 }
 
 /* ******************************** */
+/* ****** Oldal: altalanos ******* */
+/* ******************************** */
+.generalSection__MainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.generalSection__Title{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.generalSection__ContentContainer{
+    margin-bottom: 80px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 70px;
+    max-width: 1720px; /* különben 1. sorban 4, 2. sorban 2 komponens lesz*/
+}
+
+.generalSection__Margin{
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* ******************************** */
 /* ****** Oldal: Céginformáció **** */
 /* ******************************** */
 .weBuildWebsites__Container{
@@ -269,23 +302,24 @@ footer{
 /* ******************************** */
 /* ****** Oldal: Szolgaltatasok *** */
 /* ******************************** */
+/*
 .ourServices__main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+}*/
 
-.ourServices__Title{
+/*.ourServices__Title{
     font-size: 40px;
     font-style: italic;
     font-weight: 400;
     line-height: 47px;
     margin-top: 80px;
     margin-bottom: 89px;
-}
+}*/
 
-.ourServices__ComponentContainer{
+/* .ourServices__ComponentContainer{
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 80px;
@@ -295,9 +329,8 @@ footer{
     align-items: flex-start;
     gap: 70px;
     flex-wrap: wrap;
-    max-width: 1720px; /* különben 1. sorban 4, 2. sorban 2 komponens lesz*/
-    
-}
+    max-width: 1720px; különben 1. sorban 4, 2. sorban 2 komponens lesz
+} */
 
 .ourServices__Component{
     display: flex;
@@ -330,3 +363,7 @@ footer{
     font-size: 24px;
     font-weight: 400;  
 }
+
+/* ******************************** */
+/* ****** Oldal: Kapcsolat ******** */
+/* ******************************** */
