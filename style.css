@@ -4,18 +4,15 @@
 
     /* Theme light*/
     
-
     /* General */
     --colorLight: #FFF;
     --colorDark: #000;
 }
-
 body{
     margin: 0px;
     background: var(--themeDark-bg);
     width: 100vw;
 }
-
 .titlepage__parentContainer{
     /* függöleg igazitas*/
     position: absolute;
@@ -33,12 +30,10 @@ body{
     height: 100%;
     width: 100%;
 }
-
 .titlepage__childContainer{
     display: flex;
     flex-direction: column; /* a linkek elrendezesere*/
 }
-
 .titlepage__verticalLine{
     width: 1px;
     height: 219px;
@@ -46,12 +41,10 @@ body{
     margin-left: 50px;
     margin-right: 50px;
 }
-
 .font{
     color: #FFF;
     font-family: Roboto;
 }
-
 .font__Logo{
     font-size: 64px;
     font-weight: 900;
@@ -59,31 +52,25 @@ body{
     white-space: nowrap;
 
 }
-
 .font__Link{
     font-size: 54px;
     font-weight: 100;
     line-height: normal;
 }
-
 .font__Link--NavBar{
     font-size: 20px;
 }
-
 .link{
     text-decoration: none; /* megszünteti a default-alahuzast*/
     color: inherit;  /* atveszi a szövegnek beallitott class-t a default ronda kék helyett*/
 }
-
 .link:hover{
     opacity: 0.6;
     transition: .1s;
 }
-
 .link--selected{
 
 }
-
 .link__titlepage{
 
 }
@@ -103,13 +90,11 @@ header{
     height: 80px;
     border-bottom: 1px solid #FFF;
 }
-
 .navigation__Logo{
     flex: 2;
     font-size: 40px;
     font-weight: 100;
 }
-
 .navigation__LinkContainer{
     display: flex;
     justify-content: center;
@@ -126,7 +111,6 @@ footer{
 
     position: relative;
 }
-
 .footer__Text{
     font-size: 120px;
     font-weight: 400;
@@ -148,13 +132,11 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
 .generalSection__Title{
     font-size: 40px;
     font-style: italic;
     font-weight: 400;
 }
-
 .generalSection__ContentContainer{
     display: flex;
     justify-content: space-around;
@@ -163,18 +145,15 @@ footer{
     gap: 70px;
     margin-bottom: 80px;
 }
-
 .generalSection__Margin{
     margin-top: 80px;
     margin-left: 80px;
     margin-right: 80px;
 }
-
 .invertedColors{
     background-color: var(--colorLight);
     color: var(--colorDark);
 }
-
 .generalSection__Component{
     /* Parent szerep*/
     display: flex;
@@ -186,6 +165,7 @@ footer{
 /* ******************************** */
 /* ****** Oldal: Céginformáció **** */
 /* ******************************** */
+/* ------ Section: Weboldalakat epitünk ------*/
 .weBuildWebsites__Container{
     height: 471px;
     margin-left: 80px;
@@ -205,14 +185,12 @@ footer{
     
     position: relative; /* A link class-a miatt szükseges beallitas*/
 }
-
 .weBuildWebsites__Text{
     font-size: 120px;
     font-weight: 400; 
     margin-right: calc(189px - 80px);
     width: 724px; /* a reszponzivitashoz kenytelen voltam egy fix szelesseget megadni*/
 }
-
 .weBuildWebsites__Link{ /* ez nem követi a flexbox szabalyait */
     font-size: 24px;
     text-decoration-line: underline;
@@ -223,90 +201,51 @@ footer{
     bottom: 0;
     right: 0;
 }
-
-/*.aboutUs__ContainerMain{
-    padding: 80px;
-    background-color: #FFF;;
-
-
-    display: flex;  eredetileg inline-flex, de ugy nem müködött...
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-}*/
-
-/*.aboutUs__Title{
-    color: #000;
-    font-family: Roboto;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 400;
-}*/
-
-/*.aboutUs__ConatinerComponent{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
-    gap: 73px;
-}*/
-
+/* ------ Section: Rolunk mondtak ------*/
 .aboutUs__ContentContainer{
     max-width: 1800px;
 }
-
 .aboutUs__Component{
     gap: 50px;
     /*flex-grow: 1;*/ /* Adaptivitas, külön hozzaadva. 1440px szelesseg felett a komponensek egyenlö aranyban töltik ki a parent div-et a kepernyö szelessegetöl függöen.*/
-    /* TODO: 1440-es szelesseg alatti meretekre az adaptivitas/reszponzivitas meg hianyzik!*/
-
-    
-    /* A ComponentName jobb-alulra igazitasahoz.*/
-    align-self: stretch;
-    position: relative;
+    align-self: stretch;  /* A ComponentName jobb-alulra igazitasahoz.*/
+    position: relative;   /* A ComponentName jobb-alulra igazitasahoz.*/
 }
-
 .aboutUs__ComponentImg{
     width: 168px;
     height: 168px;
 }
-
 .aboutUs__ComponentText{
     width: 378px;
     font-size: 30px;
     font-style: italic;
     font-weight: 400;
 }
-
 .aboutUs__ComponentName{
     color: #7000A0;
     font-size: 24px;
     font-weight: 400;
-
     /* Jobb-alulra igazitas. Forras: https://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right */
     position: absolute;
     bottom: 0;
     right: 0;
 }
-
+/* ------ Section: Bemutatkozas ------*/
 .introduction__Container{
     margin-left: 107px;
     margin-right: 107px;
     margin-top: 80px;
     margin-bottom: 89px;
-
     /*width: 1226px;*/ /* adaptivitas miatt kikommentelve*/
     /*height: 603px;*/ /* adaptivitas miatt kikommentelve*/
     flex-shrink: 0;
 }
-
 .introduction__Title{
     font-size: 40px;
     font-style: italic;
     font-weight: 400;
     text-align: center;
 }
-
 .introduction__Content{
     font-size: 24px;
     font-weight: 400;
@@ -316,63 +255,28 @@ footer{
 /* ******************************** */
 /* ****** Oldal: Szolgaltatasok *** */
 /* ******************************** */
-/*
-.ourServices__main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}*/
-
-/*.ourServices__Title{
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 47px;
-    margin-top: 80px;
-    margin-bottom: 89px;
-}*/
-
-/* .ourServices__ComponentContainer{
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 80px;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 70px;
-    flex-wrap: wrap;
-} */
-
 .ourServices__ContentContainer
 {
-    max-width: 1720px; /*különben 1. sorban 4, 2. sorban 2 komponens lesz*/
+    max-width: 1720px; /*különben az 1. sorban 4, a 2. sorban 2 komponens is elö tud fordulni*/
 }
-
 .ourServices__Component{
     gap: 32px;
 }
-
 .ourServices__ComponentIcon{
     width: 123.459px;
     height: 64px;
 }
-
 .ourServices__ComponentTitle{
     text-align: center;
     font-size: 24px;
     font-weight: 700;
 }
-
 .ourServices__TitleWidth--Small{
     width: 228px;
 }
-
 .ourServices__TitleWidth--Big{
     width: 310px;
 }
-
 .ourServices__ComponentText{
     font-size: 24px;
     font-weight: 400;  
