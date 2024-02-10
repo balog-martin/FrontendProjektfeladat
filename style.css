@@ -45,6 +45,13 @@ body{
     color: #FFF;
     font-family: Roboto;
 }
+
+.font--bold{
+    font-weight: 700;
+}
+.font--underline{
+    text-decoration-line: underline;
+}
 .font__Logo{
     font-size: 64px;
     font-weight: 900;
@@ -285,3 +292,16 @@ footer{
 /* ******************************** */
 /* ****** Oldal: Kapcsolat ******** */
 /* ******************************** */
+.contact__ContentContainer{
+
+}
+.contact__TextContainer{
+    width: 500px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+}
+.contact__MapContainer{
+    width: 449.408px;
+    height: 722px;
+}
