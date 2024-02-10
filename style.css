@@ -7,6 +7,8 @@
     /* General */
     --colorLight: #FFF;
     --colorDark: #000;
+
+    --fontSizeContact: 24px;
 }
 body{
     margin: 0px;
@@ -296,12 +298,26 @@ footer{
 
 }
 .contact__TextContainer{
+   /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;*/
+}
+.contact__TextFont{
     width: 500px;
-    font-size: 24px;
+    font-size: var(--fontSizeContact);
     font-style: italic;
     font-weight: 400;
 }
+
 .contact__MapContainer{
     width: 449.408px;
     height: 722px;
+}
+.contact__TextContainer > div> p, ul, li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact__TextContainer > div{
+    margin-bottom: var(--fontSizeContact);
 }
