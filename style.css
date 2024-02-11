@@ -19,43 +19,50 @@ TODO:
     --color-Theme: #A0009B; 
     --color-ThemeAccent: #7000A0;
 
-    /* Theme Dark*/
-    --themeDark-bg: linear-gradient(117deg, #121215, #262629);
-    --themeDark-font: var(--color-Light);
+    /* Dark mode*/
+    --darkMode-bg: linear-gradient(117deg, #121215, #262629);
+    --darkMode-font: var(--color-Light);
  
-    /* Theme light*/
-    --themeLight-bg: linear-gradient(117deg, #EEEEF0, #CCCCD8);
-    --themeLight-font: #121215;
+    /* Light mode*/
+    --lightMode-bg: linear-gradient(117deg, #EEEEF0, #CCCCD8);
+    --lightMode-font: #121215;
 }
 
 @media (prefers-color-scheme: dark) {
     body{
-        background: var(--themeDark-bg);
+        background: var(--darkMode-bg);
     }
     .font{
-        color: var(--themeDark-font);
+        color: var(--darkMode-font);
+    }
+    .titlepage__parentContainer{
+        background: var(--darkMode-bg);
+    }
+    .titlepage__verticalLine{
+        background: var(--darkMode-font);
     }
 }
 
 @media (prefers-color-scheme: light) {
     body{
-        background: var(--themeLight-bg);
+        background: var(--lightMode-bg);
     }
     .font{
-        color: var(--themeLight-font);
+        color: var(--lightMode-font);
+    }
+    .titlepage__parentContainer{
+        background: var(--lightMode-bg);
+    }
+    .titlepage__verticalLine{
+        background: var(--lightMode-font);
     }
 }
-
-
-
-
 
 /* ********************************** */
 /* *************** Global *********** */
 /* ********************************** */
 body{
     margin: 0px;
-    /*background: var(--themeDark-bg);*/
     width: 100vw;
 }
 .titlepage__parentContainer{
@@ -71,7 +78,6 @@ body{
     align-items: center; /* függölegesen közepre */
 
     /* egyeb*/
-    background: var(--themeDark-bg);
     height: 100%;
     width: 100%;
 }
@@ -82,12 +88,10 @@ body{
 .titlepage__verticalLine{
     width: 1px;
     height: 219px;
-    background: #FFF;
     margin-left: 50px;
     margin-right: 50px;
 }
 .font{
-    /*color: #FFF;*/
     font-family: Roboto;
 }
 
