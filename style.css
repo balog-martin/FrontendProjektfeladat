@@ -1,21 +1,55 @@
+/* ********************************** */
+/* ********* Media query ************ */
+/* ******* Light/Dark mode ********** */
+/* ********************************** */
 :root{
     /* Theme Dark*/
     --themeDark-bg: linear-gradient(117deg, #121215, #262629);
-
+    --themeDark-font: #FFF;
+ 
     /* Theme light*/
+    --themeLight-bg: linear-gradient(117deg, #EEEEF0, #CCCCD8);
+    --themeLight-font: #121215;
     
     /* General */
     --colorLight: #FFF;
     --colorDark: #000;
+    --theme-color: #A0009B;
+    --theme-colorAccent:  #7000A0;
 
     --fontSizeContact: 24px;
 
-    --theme-color: #A0009B;
-    --theme-colorAccent:  #7000A0;
+
 }
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: var(--themeDark-bg);
+    }
+    .font{
+        color: var(--themeDark-font);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body{
+        background: var(--themeLight-bg);
+    }
+    .font{
+        color: var(--themeLight-font);
+    }
+}
+
+
+
+
+
+/* ********************************** */
+/* *************** Global *********** */
+/* ********************************** */
 body{
     margin: 0px;
-    background: var(--themeDark-bg);
+    /*background: var(--themeDark-bg);*/
     width: 100vw;
 }
 .titlepage__parentContainer{
@@ -47,7 +81,7 @@ body{
     margin-right: 50px;
 }
 .font{
-    color: #FFF;
+    /*color: #FFF;*/
     font-family: Roboto;
 }
 
@@ -127,6 +161,7 @@ footer{
     font-size: 120px;
     font-weight: 400;
     letter-spacing: 200px;
+    color: var(--colorLight);
     
     margin: 0;
     position: absolute;
