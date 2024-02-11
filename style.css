@@ -1,25 +1,31 @@
+/*
+TODO:
+- aktiv oldal linkje felköver
+- valtozok: fontweight, fontsize stb (?)
+
+*/
+
 /* ********************************** */
 /* ********* Media query ************ */
 /* ******* Light/Dark mode ********** */
 /* ********************************** */
 :root{
+    /* Size */
+    --fontSizeContact: 24px;
+
+    /* General color*/
+    --color-Light: #FFF;
+    --color-Dark: #000;
+    --color-Theme: #A0009B; 
+    --color-ThemeAccent: #7000A0;
+
     /* Theme Dark*/
     --themeDark-bg: linear-gradient(117deg, #121215, #262629);
-    --themeDark-font: #FFF;
+    --themeDark-font: var(--color-Light);
  
     /* Theme light*/
     --themeLight-bg: linear-gradient(117deg, #EEEEF0, #CCCCD8);
     --themeLight-font: #121215;
-    
-    /* General */
-    --colorLight: #FFF;
-    --colorDark: #000;
-    --theme-color: #A0009B;
-    --theme-colorAccent:  #7000A0;
-
-    --fontSizeContact: 24px;
-
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -153,7 +159,7 @@ header{
 /* ******************************** */
 footer{
     height: 291px;
-    background: linear-gradient(90deg, var(--theme-colorAccent) 0.01%, var(--theme-color) 100%);
+    background: linear-gradient(90deg, var(--color-ThemeAccent) 0.01%, var(--color-Theme) 100%);
 
     position: relative;
 }
@@ -161,7 +167,7 @@ footer{
     font-size: 120px;
     font-weight: 400;
     letter-spacing: 200px;
-    color: var(--colorLight);
+    color: var(--color-Light);
     
     margin: 0;
     position: absolute;
@@ -198,8 +204,8 @@ footer{
     margin-right: 80px;
 }
 .invertedColors{
-    background-color: var(--colorLight);
-    color: var(--colorDark);
+    background-color: var(--color-Light);
+    color: var(--color-Dark);
 }
 .generalSection__Component{
     /* Parent szerep*/
@@ -269,7 +275,7 @@ footer{
     font-weight: 400;
 }
 .aboutUs__ComponentName{
-    color: var(--theme-colorAccent);
+    color: var(--color-ThemeAccent);
     font-size: 24px;
     font-weight: 400;
     /* Jobb-alulra igazitas. Forras: https://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right */
@@ -394,7 +400,7 @@ form{
     height: 50px;
     padding: 0;
     border: 0;
-    border-bottom: 4px solid var(--theme-color);
+    border-bottom: 4px solid var(--color-Theme);
     background: #888;
     width: 100%;
 }
