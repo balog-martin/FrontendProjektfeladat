@@ -21,6 +21,11 @@ TODO:
     .contact__TextFont{
         width: 100%;
     }
+    .generalSection__ContentContainer{
+        gap: 0px;
+        row-gap: 64px;
+        margin-bottom: 32px;
+    }
     .generalSection__Component{
         width: auto;
     }  
@@ -35,6 +40,11 @@ TODO:
     }
     .contact__TextFont{
         width: auto;
+    }
+    .generalSection__ContentContainer{
+        gap: 70px;
+        row-gap: 50px;
+        margin-bottom: 80px;
     }
     .generalSection__Component{
         width: 379px; 
@@ -262,14 +272,9 @@ footer{
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 70px;
-    margin-bottom: 80px;
 }
-.generalSection__Margin{
-    margin-top: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
+
+
 
 .generalSection__Component{
     /* Parent szerep*/
