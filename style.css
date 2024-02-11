@@ -2,7 +2,7 @@
 TODO:
 - aktiv oldal linkje felköver
 - valtozok: fontweight, fontsize stb (?)
-- generalSection__Component 379px-es erteket valtozohoz rendelni (?)
+- mySection__Component 379px-es erteket valtozohoz rendelni (?)
 
 */
 
@@ -26,7 +26,7 @@ TODO:
         row-gap: 64px;
         margin-bottom: 32px;
     }
-    .generalSection__Component{
+    .mySection__Component{
         width: auto;
     }  
     .aboutUs__ComponentText{
@@ -54,7 +54,7 @@ TODO:
         row-gap: 50px;
         margin-bottom: 80px;
     }
-    .generalSection__Component{
+    .mySection__Component{
         width: 379px; 
     }
     .aboutUs__ComponentText{
@@ -293,7 +293,7 @@ footer{
 
 
 
-.generalSection__Component{
+.mySection__Component{
     /* Parent szerep*/
     display: flex;
     flex-direction: column;
