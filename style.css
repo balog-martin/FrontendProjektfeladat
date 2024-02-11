@@ -66,8 +66,16 @@ TODO:
         bottom: 0;
         right: 0;
     }*/
-    
 } 
+
+@media screen and (min-width: 1800px){
+    .ourServices__ContentContainer
+    {
+        max-width: 1700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 
 /* ********************************** */
@@ -398,7 +406,7 @@ footer{
 /* ******************************** */
 .ourServices__ContentContainer
 {
-    max-width: 1720px; /*különben az 1. sorban 4, a 2. sorban 2 komponens is elö tud fordulni*/
+    /*max-width: var(--limitBigScreen); különben az 1. sorban 4, a 2. sorban 2 komponens is elö tud fordulni*/
 }
 .ourServices__Component{
     gap: 32px;
