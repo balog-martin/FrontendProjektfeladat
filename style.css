@@ -29,6 +29,10 @@ TODO:
     .generalSection__Component{
         width: auto;
     }  
+    .aboutUs__ComponentText{
+        font-size: 24px;
+    }
+    
 }  
 
 /* Desktop*/
@@ -48,6 +52,9 @@ TODO:
     }
     .generalSection__Component{
         width: 379px; 
+    }
+    .aboutUs__ComponentText{
+        font-size: 30px;
     }
 
 } 
@@ -340,8 +347,6 @@ footer{
     height: 168px;
 }
 .aboutUs__ComponentText{
-    width: 378px;
-    font-size: 30px;
     font-style: italic;
     font-weight: 400;
 }
