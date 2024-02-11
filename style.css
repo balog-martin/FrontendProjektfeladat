@@ -32,6 +32,10 @@ TODO:
     .aboutUs__ComponentText{
         font-size: 24px;
     }
+    /*
+    .aboutUs__ComponentName{
+        align-self: self-end;
+    }*/
     
 }  
 
@@ -56,7 +60,13 @@ TODO:
     .aboutUs__ComponentText{
         font-size: 30px;
     }
-
+    /*.aboutUs__ComponentName{
+        Jobb-alulra igazitas. Forras: https://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right 
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }*/
+    
 } 
 
 
@@ -334,13 +344,17 @@ footer{
 }
 /* ------ Section: Rolunk mondtak ------*/
 .aboutUs__ContentContainer{
-    max-width: 1800px;
+    /*max-width: 1800px;*/
 }
 .aboutUs__Component{
-    gap: 50px;
+    /*gap: 50px;*/
+    height: 436px;
+
     /*flex-grow: 1;*/ /* Adaptivitas, külön hozzaadva. 1440px szelesseg felett a komponensek egyenlö aranyban töltik ki a parent div-et a kepernyö szelessegetöl függöen.*/
     align-self: stretch;  /* A ComponentName jobb-alulra igazitasahoz.*/
     position: relative;   /* A ComponentName jobb-alulra igazitasahoz.*/
+
+    justify-content: space-between;
 }
 .aboutUs__ComponentImg{
     width: 168px;
@@ -349,18 +363,17 @@ footer{
 .aboutUs__ComponentText{
     font-style: italic;
     font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .aboutUs__ComponentName{
     color: var(--color-ThemeAccent);
     font-size: 24px;
     font-weight: 400;
-    /* Jobb-alulra igazitas. Forras: https://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right */
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    align-self: flex-end;
 }
 /* ------ Section: Bemutatkozas ------*/
-.introduction__Container{
+.introduction__ContentContainer{
     margin-left: 107px;
     margin-right: 107px;
     margin-top: 80px;
@@ -368,6 +381,7 @@ footer{
     /*width: 1226px;*/ /* adaptivitas miatt kikommentelve*/
     /*height: 603px;*/ /* adaptivitas miatt kikommentelve*/
     flex-shrink: 0;
+    row-gap: var(--fontSizeContact);
 }
 .introduction__Title{
     font-size: 40px;
@@ -375,11 +389,14 @@ footer{
     font-weight: 400;
     text-align: center;
 }
-.introduction__Content{
+.introduction__ContentContainer > p{
     font-size: 24px;
     font-weight: 400;
-    gap: 0;
+    row-gap: var(--fontSizeContact);
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
 
 /* ******************************** */
 /* ****** Oldal: Szolgaltatasok *** */
@@ -423,14 +440,15 @@ footer{
     align-items: flex-start;*/
 }
 .contact__TextFont{
-    width: 500px;
+    /*width: 500px;*/
+    /*max-width: 700px;*/
     font-size: var(--fontSizeContact);
     font-style: italic;
     font-weight: 400;
 }
 
 .contact__MapContainer{
-    width: 449.408px;
+    /*width: 449.408px;*/
     height: 722px;
 }
 .contact__TextContainer > div> p, ul, li {
