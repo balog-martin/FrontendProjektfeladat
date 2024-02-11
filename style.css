@@ -2,8 +2,22 @@
 TODO:
 - aktiv oldal linkje felköver
 - valtozok: fontweight, fontsize stb (?)
-
 */
+/* ********************************** */
+/* ******** Media queries *********** */
+/*  Mobile first, target width 360px  */
+/* ********************************** */
+
+/* Mobile*/
+@media screen and (max-width: 640px){   
+
+}  
+
+/* Desktop*/
+@media screen and (min-width: 641px){
+
+} 
+
 
 /* ********************************** */
 /* ********* Media query ************ */
