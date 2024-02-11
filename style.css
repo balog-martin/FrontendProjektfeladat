@@ -68,8 +68,9 @@ TODO:
     }*/
 } 
 
+/* Desktop, extra szeles kepernyön*/
 @media screen and (min-width: 1800px){
-    .ourServices__ContentContainer
+    .ourServices__ContentContainer /* ez azert van külön is, hogy megmaradjon a flexboxban a 3 oszlop*/
     {
         max-width: 1700px;
         margin-left: auto;
