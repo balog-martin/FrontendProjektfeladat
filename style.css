@@ -9,6 +9,9 @@
     --colorDark: #000;
 
     --fontSizeContact: 24px;
+
+    --theme-color: #A0009B;
+    --theme-colorAccent:  #7000A0;
 }
 body{
     margin: 0px;
@@ -116,7 +119,7 @@ header{
 /* ******************************** */
 footer{
     height: 291px;
-    background: linear-gradient(90deg, #7000A0 0.01%, #A0009B 100%);
+    background: linear-gradient(90deg, var(--theme-colorAccent) 0.01%, var(--theme-color) 100%);
 
     position: relative;
 }
@@ -231,7 +234,7 @@ footer{
     font-weight: 400;
 }
 .aboutUs__ComponentName{
-    color: #7000A0;
+    color: var(--theme-colorAccent);
     font-size: 24px;
     font-weight: 400;
     /* Jobb-alulra igazitas. Forras: https://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right */
@@ -356,7 +359,7 @@ form{
     height: 50px;
     padding: 0;
     border: 0;
-    border-bottom: 4px solid #A0009B;
+    border-bottom: 4px solid var(--theme-color);
     background: #888;
     width: 100%;
 }
