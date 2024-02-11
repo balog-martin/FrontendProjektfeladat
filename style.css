@@ -101,9 +101,9 @@ TODO:
 /* ********************************** */
 /* *************** Global *********** */
 /* ********************************** */
-body{
+body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizszintes scroll-bar.*/
     margin: 0px;
-    width: 100vw;
+    width: auto; 
 }
 .titlepage__parentContainer{
     /* függöleg igazitas*/
