@@ -2,7 +2,10 @@
 TODO:
 - aktiv oldal linkje felköver
 - valtozok: fontweight, fontsize stb (?)
+- generalSection__Component 379px-es erteket valtozohoz rendelni (?)
+
 */
+
 /* ********************************** */
 /* ******** Media queries *********** */
 /*  Mobile first, target width 360px  */
@@ -10,11 +13,32 @@ TODO:
 
 /* Mobile*/
 @media screen and (max-width: 640px){   
-
+    .generalSection__Margin{
+        margin-top: 80px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .contact__TextFont{
+        width: 100%;
+    }
+    .generalSection__Component{
+        width: auto;
+    }  
 }  
 
 /* Desktop*/
 @media screen and (min-width: 641px){
+    .generalSection__Margin{
+        margin-top: 80px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .contact__TextFont{
+        width: auto;
+    }
+    .generalSection__Component{
+        width: 379px; 
+    }
 
 } 
 
@@ -252,8 +276,10 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 379px;
+    /*width: 379px;*/
+    max-width: 379px;
 }
+
 
 /* ******************************** */
 /* ****** Oldal: Céginformáció **** */
