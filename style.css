@@ -32,6 +32,7 @@ TODO:
     body{
         background: var(--darkMode-bg);
     }
+
     .font{
         color: var(--darkMode-font);
     }
@@ -41,12 +42,20 @@ TODO:
     .titlepage__verticalLine{
         background: var(--darkMode-font);
     }
+    .ourServices__ComponentIcon{
+        fill: var(--darkMode-font);  
+        color: var(--darkMode-font);  
+    }
+    .header__Line{
+        border-bottom-color: var(--darkMode-font);
+    }
 }
 
 @media (prefers-color-scheme: light) {
     body{
         background: var(--lightMode-bg);
     }
+
     .font{
         color: var(--lightMode-font);
     }
@@ -55,6 +64,13 @@ TODO:
     }
     .titlepage__verticalLine{
         background: var(--lightMode-font);
+    }
+    .ourServices__ComponentIcon{
+        fill: var(--lightMode-font);
+        color: var(--lightMode-font);  
+    }
+    .header__Line{
+        border-bottom-color: var(--lightMode-font);
     }
 }
 
@@ -144,7 +160,7 @@ header{
     /*egyeb*/
     padding: 0px 32px;
     height: 80px;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid;
 }
 .navigation__Logo{
     flex: 2;
