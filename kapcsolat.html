@@ -71,28 +71,30 @@
                 </div>
             </section>
 
-            <section class="mySection">
-                <form class="invertedColors mySection__Margin font">
-                    <div class="form__FirstContainer">
-                        <div class="form__Component">
-                            <label class="form__label" for="idNameInput">Név:</label>
-                            <input class="form__input" type="text" name="nameInput" id="idNameInput" required minlength="1">
+            <section class="invertedColors">
+                <div class="mySection">
+                    <form class="invertedColors mySection__Margin font">
+                        <div class="form__FirstContainer">
+                            <div class="form__Component">
+                                <label class="form__label" for="idNameInput">Név:</label>
+                                <input class="form__input" type="text" name="nameInput" id="idNameInput" required minlength="1">
+                            </div>
+                            <div class="form__Component">
+                                <label class="form__label" for="idEmailInput">E-mail cím:</label>
+                                <input class="form__input" type="email" name="emailInput" id="idEmailInput" required minlength="1">
+                            </div>
+                            <div class="form__Component">
+                                <label class="form__label" for="idTelInput">Telefonszám:</label>
+                                <input class="form__input" type="tel" name="telNr" id="idTelInput">
+                            </div>
                         </div>
                         <div class="form__Component">
-                            <label class="form__label" for="idEmailInput">E-mail cím:</label>
-                            <input class="form__input" type="email" name="emailInput" id="idEmailInput" required minlength="1">
+                            <label class="form__label" for="idTextarea">Üzenet:</label>
+                            <textarea class="form__input form__textarea" name="message" id="idTextarea"></textarea>
                         </div>
-                        <div class="form__Component">
-                            <label class="form__label" for="idTelInput">Telefonszám:</label>
-                            <input class="form__input" type="tel" name="telNr" id="idTelInput">
-                        </div>
-                    </div>
-                    <div class="form__Component">
-                        <label class="form__label" for="idTextarea">Üzenet:</label>
-                        <textarea class="form__input form__textarea" name="message" id="idTextarea"></textarea>
-                    </div>
-                    <button type="submit" class="form__button">Küldés</button>
-                </form>
+                        <button type="submit" class="form__button">Küldés</button>
+                    </form>
+                </div>
             </section>
 
 
