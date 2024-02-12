@@ -453,12 +453,15 @@ footer{
 /* ****** Oldal: Kapcsolat ******** */
 /* ******************************** */
 .contact__ContentContainer{
-
+    justify-content: space-between;
 }
 .contact__TextContainer{
    /* display: flex;
     flex-direction: column;
     align-items: flex-start;*/
+
+    /*flex-grow: 2;*/
+    width: calc(100% * 702 / 1280 );
 }
 .contact__TextFont{
     /*width: 500px;*/
@@ -471,6 +474,8 @@ footer{
 .contact__MapContainer{
     /*width: 449.408px;*/
     height: 722px;
+    /*flex-grow: 1;*/
+    width: calc(100% * 449.408 / 1280 );
 }
 .contact__TextContainer > div> p, ul, li {
     margin-top: 0px;
