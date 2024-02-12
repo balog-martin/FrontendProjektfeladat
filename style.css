@@ -59,7 +59,7 @@ TODO:
         letter-spacing: 2px;
         visibility: visible;
     }
-    .navigation__LinkContainer{
+    .myNavigation{
         flex-direction: column;
         align-items: flex-end;
         gap: 8px;
@@ -114,7 +114,7 @@ TODO:
         visibility: collapse;
         height: 0;
     }
-    .navigation__LinkContainer{
+    .myNavigation{
         flex-direction: row;
         align-items: center;
         gap: 50px;
@@ -188,7 +188,7 @@ TODO:
         fill: var(--darkMode-font);  
         color: var(--darkMode-font);  
     }
-    .header__Line{
+    .header__BottomLine{
         border-bottom-color: var(--darkMode-font);
     }
     .invertedColors{
@@ -214,7 +214,7 @@ TODO:
         fill: var(--lightMode-font);
         color: var(--lightMode-font);  
     }
-    .header__Line{
+    .header__BottomLine{
         border-bottom-color: var(--lightMode-font);
     }
     .invertedColors{
@@ -311,14 +311,7 @@ header{
     /*egyeb*/
     border-bottom: 1px solid;
 }
-
-.header__Container{
-    /*text-align: left;
-    vertical-align: middle;*/
-    margin: auto;
-}
-
-.navigation__LinkContainer{
+.myNavigation{
     display: flex;
     justify-content: center;
 }
