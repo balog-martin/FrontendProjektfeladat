@@ -12,7 +12,7 @@ TODO:
 /* ********************************** */
 
 /* Mobile*/
-@media screen and (max-width: 640px){   
+@media screen and (max-width: 800px){   
     .mySection__Margin{
         margin-top: 80px;
         margin-left: 32px;
@@ -36,11 +36,41 @@ TODO:
     .aboutUs__ComponentName{
         align-self: self-end;
     }*/
-    
+
+    header{
+        /*margin-top: 8px;
+        margin-bottom: 8px;*/
+        /*margin-left: 24px;
+        margin-right: 24px;*/
+        padding: 8px 24px;
+    }
+    /*.navigation__Logo{
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }*/
+    .header__Logo--Desktop{
+        visibility: collapse;
+        height: 0;
+    }
+    .header__Logo--Mobile{
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        visibility: visible;
+    }
+    .navigation__LinkContainer{
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+    }
+    .font__Link--NavBar{
+        font-weight: 100;
+    }
 }  
 
 /* Desktop*/
-@media screen and (min-width: 641px){
+@media screen and (min-width: 801px){
     .mySection__Margin{
         margin-top: 80px;
         margin-left: 80px;
@@ -66,6 +96,32 @@ TODO:
         bottom: 0;
         right: 0;
     }*/
+
+    header{
+        height: 80px;
+        padding: 0px 32px;
+    }
+    /*.navigation__Logo{
+        font-size: 40px;
+        font-weight: 100;
+    }*/
+    .header__Logo--Desktop{
+        font-size: 40px;
+        font-weight: 100;
+        visibility: visible;
+    }
+    .header__Logo--Mobile{
+        visibility: collapse;
+        height: 0;
+    }
+    .navigation__LinkContainer{
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+    .font__Link--NavBar{
+        font-weight: 400;
+    }
 } 
 
 /* Desktop, extra szeles kepernyön*/
@@ -225,7 +281,7 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
     line-height: normal;
 }
 .font__Link--NavBar{
-    font-size: 20px;
+    font-size: 24px;
 }
 .link{
     text-decoration: none; /* megszünteti a default-alahuzast*/
@@ -253,20 +309,18 @@ header{
     flex-shrink: 0;
 
     /*egyeb*/
-    padding: 0px 32px;
-    height: 80px;
     border-bottom: 1px solid;
 }
-.navigation__Logo{
-    flex: 2;
-    font-size: 40px;
-    font-weight: 100;
+
+.header__Container{
+    /*text-align: left;
+    vertical-align: middle;*/
+    margin: auto;
 }
+
 .navigation__LinkContainer{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
 }
 
 /* ******************************** */
