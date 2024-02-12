@@ -32,23 +32,9 @@ TODO:
     .aboutUs__ComponentText{
         font-size: 24px;
     }
-    /*
-    .aboutUs__ComponentName{
-        align-self: self-end;
-    }*/
-
     header{
-        /*margin-top: 8px;
-        margin-bottom: 8px;*/
-        /*margin-left: 24px;
-        margin-right: 24px;*/
         padding: 8px 24px;
     }
-    /*.navigation__Logo{
-        font-size: 32px;
-        font-weight: 900;
-        letter-spacing: 2px;
-    }*/
     .header__Logo--Desktop{
         visibility: collapse;
         height: 0;
@@ -90,21 +76,10 @@ TODO:
     .aboutUs__ComponentText{
         font-size: 29px; /* kenytelen voltam 30px helyett ezt hasznalni, különben a 3. komponens szövege 1 sorral több lesz*/
     }
-    /*.aboutUs__ComponentName{
-        Jobb-alulra igazitas. Forras: https://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right 
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }*/
-
     header{
         height: 80px;
         padding: 0px 32px;
     }
-    /*.navigation__Logo{
-        font-size: 40px;
-        font-weight: 100;
-    }*/
     .header__Logo--Desktop{
         font-size: 40px;
         font-weight: 100;
@@ -132,20 +107,12 @@ TODO:
         margin-left: auto;
         margin-right: auto;
     }
-    /*
-    .mySection__ContentContainer{
-        max-width: 1800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    */
     .mySection{
         max-width: 1800px;
         margin-left: auto;
         margin-right: auto;
     }
 }
-
 
 /* ********************************** */
 /* ********* Media query ************ */
@@ -408,9 +375,6 @@ footer{
     right: 0;
 }
 /* ------ Section: Rolunk mondtak ------*/
-.aboutUs__ContentContainer{
-    /*max-width: 1800px;*/
-}
 .aboutUs__Component{
     /*gap: 50px;*/
     height: 436px;
@@ -439,8 +403,6 @@ footer{
 }
 /* ------ Section: Bemutatkozas ------*/
 .introduction__ContentContainer{
-    /*margin-left: 107px;
-    margin-right: 107px;*/
     margin-top: 80px;
     margin-bottom: 89px;
     flex-shrink: 0;
@@ -464,10 +426,6 @@ footer{
 /* ******************************** */
 /* ****** Oldal: Szolgaltatasok *** */
 /* ******************************** */
-.ourServices__ContentContainer
-{
-    /*max-width: var(--limitBigScreen); különben az 1. sorban 4, a 2. sorban 2 komponens is elö tud fordulni*/
-}
 .ourServices__Component{
     gap: 32px;
 }
@@ -523,12 +481,10 @@ footer{
     margin-bottom: var(--fontSizeContact);
 }
 
-
 form{
     display: flex;
     flex-direction: column;
 }
-
 .form__FirstContainer{
     display: flex;
     flex-direction: row; 
@@ -562,7 +518,6 @@ form{
     background: #888;
     width: 100%;
 }
- 
 .form__textarea{   
     resize: none;  
     height: 143px;
