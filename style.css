@@ -53,6 +53,13 @@ TODO:
     .font__Link--NavBar{
         font-weight: 100;
     }
+    .contact__TextContainer{
+        width: 100%;
+    }
+    .contact__MapContainer{
+        height: 400px;
+        width: 100%;
+    }
 }  
 
 /* Desktop*/
@@ -97,6 +104,13 @@ TODO:
     .font__Link--NavBar{
         font-weight: 400;
     }
+    .contact__TextContainer{
+        width: calc(100% * 702 / 1280 );
+    }
+    .contact__MapContainer{
+        height: 722px;
+        width: calc(100% * 449.408 / 1280 );
+    }
 } 
 
 /* Desktop, extra szeles kepernyön*/
@@ -113,6 +127,21 @@ TODO:
         margin-right: auto;
     }
 }
+
+/* Desktop atmenet*/
+@media screen and (max-width: 1200px){
+    .contact__ContentContainer{
+        justify-content: space-between;
+    }
+    .contact__TextContainer{
+        width: 100%;
+    }
+    .contact__MapContainer{
+        height: 400px;
+        width: 100%;
+    }
+}
+
 
 /* ********************************** */
 /* ********* Media query ************ */
@@ -455,14 +484,6 @@ footer{
 .contact__ContentContainer{
     justify-content: space-between;
 }
-.contact__TextContainer{
-   /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;*/
-
-    /*flex-grow: 2;*/
-    width: calc(100% * 702 / 1280 );
-}
 .contact__TextFont{
     /*width: 500px;*/
     /*max-width: 700px;*/
@@ -470,18 +491,10 @@ footer{
     font-style: italic;
     font-weight: 400;
 }
-
-.contact__MapContainer{
-    /*width: 449.408px;*/
-    height: 722px;
-    /*flex-grow: 1;*/
-    width: calc(100% * 449.408 / 1280 );
-}
 .contact__TextContainer > div> p, ul, li {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
 .contact__TextContainer > div{
     margin-bottom: var(--fontSizeContact);
 }
