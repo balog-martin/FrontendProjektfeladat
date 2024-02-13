@@ -488,12 +488,6 @@ footer{
     flex-shrink: 0;
     row-gap: var(--fontSizeContact);
 }
-.introduction__Title{
-    font-size: 40px;
-    font-style: italic;
-    font-weight: var(--fontWeight-M);
-    text-align: center;
-}
 .introduction__ContentContainer > p{
     font-size: 24px;
     font-weight: var(--fontWeight-M);
