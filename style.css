@@ -208,18 +208,19 @@ TODO:
         margin-left: auto;
         margin-right: auto;
     }
-    .mySection{
+    /*.mySection{
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+    .maxContentWidht{
         max-width: 1800px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-.maxContentWidht{
-    max-width: 1800px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /* ********************************** */
 /* ********* Media query ************ */
 /* ******* Light/Dark mode ********** */
@@ -310,12 +311,6 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
 }
 .linkActive{
     font-weight: var(--fontWeight-L);
-}
-.link--selected{
-
-}
-.link__titlepage{
-
 }
 
 /* ******************************** */
