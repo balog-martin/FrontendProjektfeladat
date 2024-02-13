@@ -10,6 +10,7 @@ TODO:
     /* Size */
     --fontSizeContact: 24px;
 
+    /* Font-Weight*/
     --fontWeight-S: 100;
     --fontWeight-M: 400;
     --fontWeight-L: 700;
@@ -22,28 +23,30 @@ TODO:
     --color-Theme: #A0009B; 
     --color-ThemeAccent: #7000A0;
 
-    /* Dark mode*/
-    --darkMode-bg: linear-gradient(117deg, var(--color-Dark), var(--color-DarkAccent));
-    --darkMode-font: var(--color-Light);
- 
     /* Light mode*/
     --lightMode-bg: linear-gradient(117deg, #EEEEF0, #CCCCD8);
     --lightMode-font: var(--color-Dark);
+
+    /* Dark mode*/
+    --darkMode-bg: linear-gradient(117deg, var(--color-Dark), var(--color-DarkAccent));
+    --darkMode-font: var(--color-Light);
+
 }
-
-
-
 
 /* ********************************** */
 /* ******** Media queries *********** */
 /*  Mobile first, target width 360px  */
 /* ********************************** */
 
-/* Mobile*/
-@media screen and (max-width: 800px){  
+/* Mobile (csak az index.html-re!)*/
+@media screen and (max-width: 1000px){  
     .index__ParentContainer{
         flex-direction: column;
     } 
+    .index__ChildContainer{
+        gap: 32px;
+        align-items: center;
+    }
     .index__LogoFont{
         font-size: 48px;
         letter-spacing: 10px;
@@ -56,6 +59,32 @@ TODO:
         height: 1px;
         margin: 50px 0;
     }
+}
+
+/* Desktop (csak az index.html-re!)*/
+@media screen and (min-width: 1001px){
+    .index__ParentContainer{
+        flex-direction: row;
+    } 
+    .index__ChildContainer{
+        gap: 15px;
+    }
+    .index__LogoFont{
+        font-size: 64px;
+        letter-spacing: 15px;
+    }
+    .index__LinkFont{
+        font-size: 54px;
+    }
+    .index__Line{
+        width: 1px;
+        height: 219px;
+        margin: 0 50px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 800px){  
     .mySection__Margin{
         margin-top: 80px;
         margin-left: 32px;
@@ -103,25 +132,11 @@ TODO:
         height: 400px;
         width: 100%;
     }
-}  
+} 
 
-/* Desktop*/
+
+/* Desktop */
 @media screen and (min-width: 801px){
-    .index__ParentContainer{
-        flex-direction: row;
-    } 
-    .index__LogoFont{
-        font-size: 64px;
-        letter-spacing: 15px;
-    }
-    .index__LinkFont{
-        font-size: 54px;
-    }
-    .index__Line{
-        width: 1px;
-        height: 219px;
-        margin: 0 50px;
-    }
     .mySection__Margin{
         margin-top: 80px;
         margin-left: 80px;
@@ -171,21 +186,6 @@ TODO:
     }
 } 
 
-/* Desktop, extra szeles kepernyön*/
-@media screen and (min-width: 1800px){
-    .ourServices__ContentContainer /* ez azert van külön is, hogy megmaradjon a flexboxban a 3 oszlop*/
-    {
-        max-width: 1700px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .mySection{
-        max-width: 1800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 /* Desktop atmenet*/
 @media screen and (max-width: 1200px){
     .contact__ContentContainer{
@@ -200,6 +200,20 @@ TODO:
     }
 }
 
+/* Desktop, extra szeles kepernyön*/
+@media screen and (min-width: 1800px){
+    .ourServices__ContentContainer /* ez azert van külön is, hogy megmaradjon a flexboxban a 3 oszlop*/
+    {
+        max-width: 1700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mySection{
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* ********************************** */
 /* ********* Media query ************ */
