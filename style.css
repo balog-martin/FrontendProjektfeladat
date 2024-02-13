@@ -20,6 +20,9 @@ TODO:
         font-size: 48px;
         letter-spacing: 10px;
     }
+    .index__LinkFont{
+        font-size: 40px;
+    }
     .index__Line{
         width: 100vw;
         height: 1px;
@@ -82,6 +85,9 @@ TODO:
     .index__LogoFont{
         font-size: 64px;
         letter-spacing: 15px;
+    }
+    .index__LinkFont{
+        font-size: 54px;
     }
     .index__Line{
         width: 1px;
@@ -264,7 +270,6 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
     text-decoration-line: underline;
 }
 .font__Link{
-    font-size: 54px;
     font-weight: 100;
 }
 .font__Link--NavBar{
@@ -353,6 +358,9 @@ footer{
     white-space: nowrap;
 }
 
+.index__LinkFont{
+    font-weight: 100;
+}
 
 /* ******************************** */
 /* ****** Oldal: altalanos ******* */
