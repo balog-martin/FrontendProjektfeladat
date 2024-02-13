@@ -269,11 +269,9 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
 .font--underline{
     text-decoration-line: underline;
 }
-.font__Link{
-    font-weight: 100;
-}
 .font__Link--NavBar{
     font-size: 24px;
+    font-weight: 100;
 }
 .link{
     text-decoration: none; /* megszünteti a default-alahuzast*/
@@ -422,6 +420,7 @@ footer{
 }
 .weBuildWebsites__Link{ /* ez nem követi a flexbox szabalyait */
     font-size: 24px;
+    font-weight: 100;
     text-decoration-line: underline;
     text-wrap: nowrap;
     
