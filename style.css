@@ -6,6 +6,34 @@ TODO:
 
 */
 
+:root{
+    /* Size */
+    --fontSizeContact: 24px;
+
+    --fontWeight-S: 100;
+    --fontWeight-M: 400;
+    --fontWeight-L: 700;
+    --fontWeight-XL: 900;
+
+    /* General color*/
+    --color-Light: #FFF;
+    --color-Dark: #121215;
+    --color-DarkAccent: #262629;
+    --color-Theme: #A0009B; 
+    --color-ThemeAccent: #7000A0;
+
+    /* Dark mode*/
+    --darkMode-bg: linear-gradient(117deg, var(--color-Dark), var(--color-DarkAccent));
+    --darkMode-font: var(--color-Light);
+ 
+    /* Light mode*/
+    --lightMode-bg: linear-gradient(117deg, #EEEEF0, #CCCCD8);
+    --lightMode-font: var(--color-Dark);
+}
+
+
+
+
 /* ********************************** */
 /* ******** Media queries *********** */
 /*  Mobile first, target width 360px  */
@@ -56,7 +84,7 @@ TODO:
     }
     .header__Logo--Mobile{
         font-size: 32px;
-        font-weight: 900;
+        font-weight: var(--fontWeight-XL);
         letter-spacing: 2px;
         visibility: visible;
     }
@@ -66,7 +94,7 @@ TODO:
         gap: 8px;
     }
     .font__Link--NavBar{
-        font-weight: 100;
+        font-weight: var(--fontWeight-S);
     }
     .contact__TextContainer{
         width: 100%;
@@ -119,7 +147,7 @@ TODO:
     }
     .header__Logo--Desktop{
         font-size: 40px;
-        font-weight: 100;
+        font-weight: var(--fontWeight-S);
         visibility: visible;
     }
     .header__Logo--Mobile{
@@ -132,7 +160,7 @@ TODO:
         gap: 50px;
     }
     .font__Link--NavBar{
-        font-weight: 400;
+        font-weight: var(--fontWeight-M);
     }
     .contact__TextContainer{
         width: calc(100% * 702 / 1280 );
@@ -177,25 +205,7 @@ TODO:
 /* ********* Media query ************ */
 /* ******* Light/Dark mode ********** */
 /* ********************************** */
-:root{
-    /* Size */
-    --fontSizeContact: 24px;
 
-    /* General color*/
-    --color-Light: #FFF;
-    --color-Dark: #121215;
-    --color-DarkAccent: #262629;
-    --color-Theme: #A0009B; 
-    --color-ThemeAccent: #7000A0;
-
-    /* Dark mode*/
-    --darkMode-bg: linear-gradient(117deg, var(--color-Dark), var(--color-DarkAccent));
-    --darkMode-font: var(--color-Light);
- 
-    /* Light mode*/
-    --lightMode-bg: linear-gradient(117deg, #EEEEF0, #CCCCD8);
-    --lightMode-font: var(--color-Dark);
-}
 
 @media (prefers-color-scheme: dark) {
     body{
@@ -259,19 +269,17 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
     margin: 0px;
     width: auto; 
 }
-
 .font{
     font-family: Roboto;
 }
 .font--bold{
-    font-weight: 700;
+    font-weight: var(--fontWeight-L);
 }
 .font--underline{
     text-decoration-line: underline;
 }
 .font__Link--NavBar{
     font-size: 24px;
-    font-weight: 100;
 }
 .link{
     text-decoration: none; /* megszünteti a default-alahuzast*/
@@ -317,7 +325,7 @@ footer{
 }
 .footer__Text{
     font-size: 120px;
-    font-weight: 400;
+    font-weight: var(--fontWeight-M);
     letter-spacing: 200px;
     color: var(--color-Light);
     
@@ -352,12 +360,12 @@ footer{
     flex-direction: column; /* a linkek elrendezesere*/
 }
 .index__LogoFont{
-    font-weight: 900;
+    font-weight: var(--fontWeight-XL);
     white-space: nowrap;
 }
 
 .index__LinkFont{
-    font-weight: 100;
+    font-weight: var(--fontWeight-S);
 }
 
 /* ******************************** */
@@ -414,13 +422,13 @@ footer{
 }
 .weBuildWebsites__Text{
     font-size: 120px;
-    font-weight: 400; 
+    font-weight: var(--fontWeight-M);
     margin-right: calc(189px - 80px);
     width: 724px; /* a reszponzivitashoz kenytelen voltam egy fix szelesseget megadni*/
 }
 .weBuildWebsites__Link{ /* ez nem követi a flexbox szabalyait */
     font-size: 24px;
-    font-weight: 100;
+    font-weight: var(--fontWeight-S);
     text-decoration-line: underline;
     text-wrap: nowrap;
     
@@ -446,14 +454,14 @@ footer{
 }
 .aboutUs__ComponentText{
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--fontWeight-M);
     margin-top: 0;
     margin-bottom: 0;
 }
 .aboutUs__ComponentName{
     color: var(--color-ThemeAccent);
     font-size: 24px;
-    font-weight: 400;
+    font-weight: var(--fontWeight-M);
     align-self: flex-end;
 }
 /* ------ Section: Bemutatkozas ------*/
@@ -466,12 +474,12 @@ footer{
 .introduction__Title{
     font-size: 40px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--fontWeight-M);
     text-align: center;
 }
 .introduction__ContentContainer > p{
     font-size: 24px;
-    font-weight: 400;
+    font-weight: var(--fontWeight-M);
     row-gap: var(--fontSizeContact);
     margin-top: 0;
     margin-bottom: 0;
@@ -491,7 +499,7 @@ footer{
 .ourServices__ComponentTitle{
     text-align: center;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--fontWeight-L);
 }
 .ourServices__TitleWidth--Small{
     width: 228px;
@@ -501,7 +509,7 @@ footer{
 }
 .ourServices__ComponentText{
     font-size: 24px;
-    font-weight: 400;  
+    font-weight: var(--fontWeight-M); 
 }
 
 /* ******************************** */
@@ -515,7 +523,7 @@ footer{
     /*max-width: 700px;*/
     font-size: var(--fontSizeContact);
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--fontWeight-M);
 }
 .contact__TextContainer > div> p, ul, li {
     margin-top: 0px;
@@ -552,7 +560,7 @@ form{
     white-space: nowrap;
     text-align: left;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--fontWeight-L);
 }
 .form__input{
     height: 50px;
@@ -574,7 +582,7 @@ form{
     align-self: self-end;
     border: none;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--fontWeight-L);
     color: var(--color-Light);
     background: linear-gradient(90deg, var(--color-ThemeAccent) 0.76%, var(--color-Theme) 99.64%);
 }
