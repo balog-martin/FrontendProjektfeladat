@@ -104,7 +104,7 @@ TODO:
     .aboutUs__ComponentText{
         font-size: 24px;
     }
-    header{
+    .myHeader{
         padding: 8px 24px;
     }
     .header__Logo--Desktop{
@@ -156,7 +156,7 @@ TODO:
     .aboutUs__ComponentText{
         font-size: 29px; /* kenytelen voltam 30px helyett ezt hasznalni, különben a 3. komponens szövege 1 sorral több lesz*/
     }
-    header{
+    .myHeader{
         height: 80px;
         padding: 0px 32px;
     }
@@ -215,6 +215,11 @@ TODO:
     }
 }
 
+.maxContentWidht{
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* ********************************** */
 /* ********* Media query ************ */
 /* ******* Light/Dark mode ********** */
@@ -316,19 +321,19 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
 /* ******************************** */
 /* ********** Header *********** */
 /* ******************************** */
-header{     
+.myHeader{     
     /* child elemek igazitasa ehhez a parenthez kepest*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-
-    /*egyeb*/
-    border-bottom: 1px solid;
 }
 .myNavigation{
     display: flex;
     justify-content: center;
+}
+.header__BottomLine{
+    border-bottom: 1px solid;
 }
 
 /* ******************************** */
@@ -420,9 +425,7 @@ footer{
 /* ------ Section: Weboldalakat epitünk ------*/
 .weBuildWebsites__Container{
     height: 471px;
-    margin-left: 80px;
-    margin-right: 80px;   
-    margin-top: 71px; /*calc(70px - 32px);*/
+    /*margin-top: 71px; */
     margin-bottom: 80px;
 
     /*Background-image*/
