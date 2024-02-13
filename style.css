@@ -303,6 +303,9 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
     opacity: 0.6;
     transition: .1s;
 }
+.linkActive{
+    font-weight: var(--fontWeight-L);
+}
 .link--selected{
 
 }
