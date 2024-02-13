@@ -12,7 +12,19 @@ TODO:
 /* ********************************** */
 
 /* Mobile*/
-@media screen and (max-width: 800px){   
+@media screen and (max-width: 800px){  
+    .index__ParentContainer{
+        flex-direction: column;
+    } 
+    .index__LogoFont{
+        font-size: 48px;
+        letter-spacing: 10px;
+    }
+    .index__Line{
+        width: 100vw;
+        height: 1px;
+        margin: 50px 0;
+    }
     .mySection__Margin{
         margin-top: 80px;
         margin-left: 32px;
@@ -64,6 +76,18 @@ TODO:
 
 /* Desktop*/
 @media screen and (min-width: 801px){
+    .index__ParentContainer{
+        flex-direction: row;
+    } 
+    .index__LogoFont{
+        font-size: 64px;
+        letter-spacing: 15px;
+    }
+    .index__Line{
+        width: 1px;
+        height: 219px;
+        margin: 0 50px;
+    }
     .mySection__Margin{
         margin-top: 80px;
         margin-left: 80px;
@@ -174,10 +198,10 @@ TODO:
     .font{
         color: var(--darkMode-font);
     }
-    .titlepage__parentContainer{
+    .index__ParentContainer{
         background: var(--darkMode-bg);
     }
-    .titlepage__verticalLine{
+    .index__Line{
         background: var(--darkMode-font);
     }
     .ourServices__ComponentIcon{
@@ -200,10 +224,10 @@ TODO:
     .font{
         color: var(--lightMode-font);
     }
-    .titlepage__parentContainer{
+    .index__ParentContainer{
         background: var(--lightMode-bg);
     }
-    .titlepage__verticalLine{
+    .index__Line{
         background: var(--lightMode-font);
     }
     .ourServices__ComponentIcon{
@@ -229,32 +253,7 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
     margin: 0px;
     width: auto; 
 }
-.titlepage__parentContainer{
-    /* függöleg igazitas*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-    /* child elemek igazitasa ehhez a parenthez kepest közepre*/
-    display: flex;
-    justify-content: center; /* vizszintesen közepre*/
-    align-items: center; /* függölegesen közepre */
-
-    /* egyeb*/
-    height: 100%;
-    width: 100%;
-}
-.titlepage__childContainer{
-    display: flex;
-    flex-direction: column; /* a linkek elrendezesere*/
-}
-.titlepage__verticalLine{
-    width: 1px;
-    height: 219px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 .font{
     font-family: Roboto;
 }
@@ -264,17 +263,9 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
 .font--underline{
     text-decoration-line: underline;
 }
-.font__Logo{
-    font-size: 64px;
-    font-weight: 900;
-    letter-spacing: 15px;
-    white-space: nowrap;
-
-}
 .font__Link{
     font-size: 54px;
     font-weight: 100;
-    line-height: normal;
 }
 .font__Link--NavBar{
     font-size: 24px;
@@ -295,7 +286,7 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
 }
 
 /* ******************************** */
-/* ********** Navigacio *********** */
+/* ********** Header *********** */
 /* ******************************** */
 header{     
     /* child elemek igazitasa ehhez a parenthez kepest*/
@@ -335,6 +326,35 @@ footer{
 }
 
 /* ******************************** */
+/* ****** Oldal: Index ******* */
+/* ******************************** */
+.index__ParentContainer{
+    /* függöleg igazitas*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* child elemek igazitasa ehhez a parenthez kepest közepre*/
+    display: flex;
+    justify-content: center; /* vizszintesen közepre*/
+    align-items: center; /* függölegesen közepre */
+
+    /* egyeb*/
+    height: 100%;
+    width: 100%;
+}
+.index__ChildContainer{
+    display: flex;
+    flex-direction: column; /* a linkek elrendezesere*/
+}
+.index__LogoFont{
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+
+/* ******************************** */
 /* ****** Oldal: altalanos ******* */
 /* ******************************** */
 .mySection{
@@ -362,7 +382,6 @@ footer{
     /*width: 379px;*/
     max-width: 379px;
 }
-
 
 /* ******************************** */
 /* ****** Oldal: Céginformáció **** */
