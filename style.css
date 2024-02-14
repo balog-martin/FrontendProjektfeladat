@@ -113,7 +113,7 @@ TODO:
         text-align: center;
         font-size: 50px;
         line-height: 120%; 
-        margin-top: calc(32px + (100vw - 440px) * (160 - 32) / (800 - 365));
+        margin-top: calc(32px + (100vw - 365px) * (160 - 32) / (800 - 365));
 
         margin-left: 36px;
         margin-right: 36px;
