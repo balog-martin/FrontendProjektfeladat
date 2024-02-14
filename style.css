@@ -320,9 +320,13 @@
     .index__Line{
         background: var(--darkMode-font);
     }
-    .ourServices__ComponentIcon{
+    #idIcon1, #idIcon2, #idIcon3, #idIcon4, #idIcon5, #idIcon6{ 
+        /* Ez a modszer müködött csak az ikono szinenek valtasahoz dark/light mode alapjan.
+        Idö hianyaban mar nem talaltam olyan modszert, 
+        amivel az img tagben meghivatkozott svg-t lehetne css-böl formazni...
+        Igy kenytelen voltam az SVG-t copy-paste-tel a HTML-be rakni es ID-n keresztül definialni a szint */
         fill: var(--darkMode-font);  
-        color: var(--darkMode-font);  
+        color: var(--darkMode-font); 
     }
     .header__BottomLine{
         border-bottom-color: var(--darkMode-font);
@@ -346,9 +350,9 @@
     .index__Line{
         background: var(--lightMode-font);
     }
-    .ourServices__ComponentIcon{
+    #idIcon1, #idIcon2, #idIcon3, #idIcon4, #idIcon5, #idIcon6{
         fill: var(--lightMode-font);
-        color: var(--lightMode-font);  
+        color: var(--lightMode-font);
     }
     .header__BottomLine{
         border-bottom-color: var(--lightMode-font);
@@ -559,12 +563,10 @@ footer{
 /* ******************************** */
 /* ****** Oldal: Szolgaltatasok *** */
 /* ******************************** */
-
 .ourServices__Component{
     gap: 32px;
 }
-.ourServices__ComponentIcon{
-    width: 123.459px;
+#idIcon1, #idIcon2, #idIcon3, #idIcon4, #idIcon5, #idIcon6{
     height: 64px;
 }
 .ourServices__ComponentTitle{
