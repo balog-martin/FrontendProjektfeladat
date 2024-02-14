@@ -111,7 +111,7 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
 /* Mobile */
 @media screen and (max-width: 800px){  
     .mySection__Margin{
-        margin-top: 80px;
+        margin-top: 32px;
         margin-left: 32px;
         margin-right: 32px;
     }
