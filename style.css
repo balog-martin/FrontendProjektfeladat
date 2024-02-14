@@ -91,9 +91,6 @@ TODO:
         margin-left: 32px;
         margin-right: 32px;
     }
-    .contact__TextFont{
-        width: 100%;
-    }
     .mySection__ContentContainer{
         gap: 0px;
         row-gap: 64px;
@@ -102,6 +99,31 @@ TODO:
     .mySection__Component{
         width: auto;
     }  
+    .weBuildWebsites__Container{
+        align-items: flex-start;
+        justify-content: space-around;
+        /*min-height: 281px;*/
+        height: calc(100vw * 330 / 440);
+        margin: 0;
+        margin-bottom: 0; 
+        background-size: 100% auto;
+        background-position: center;
+    }
+    .weBuildWebsites__Text{ 
+        text-align: center;
+        font-size: 50px;
+        line-height: 120%; 
+        margin-top: calc(32px + (100vw - 440px) * (160 - 32) / (800 - 365));
+
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+    .weBuildWebsites__Link{
+        visibility: collapse;
+    }
+    .contact__TextFont{
+        width: 100%;
+    }
     .aboutUs__ComponentText{
         font-size: 24px;
     }
@@ -143,9 +165,6 @@ TODO:
         margin-left: 80px;
         margin-right: 80px;
     }
-    .contact__TextFont{
-        width: auto;
-    }
     .mySection__ContentContainer{
         gap: 70px;
         row-gap: 50px;
@@ -153,6 +172,24 @@ TODO:
     }
     .mySection__Component{
         width: 379px; 
+    }
+    .weBuildWebsites__Container{
+        align-items: center;
+        justify-content: flex-end;
+        height: 471px;
+        margin-bottom: 80px;
+        background-size: contain;
+    }
+    .weBuildWebsites__Text{
+        font-size: 120px;
+        margin-right: calc(189px - 80px);
+        width: 724px; /* a reszponzivitashoz kenytelen voltam egy fix szelesseget megadni*/
+    }
+    .weBuildWebsites__Link{
+        visibility: visible;
+    }
+    .contact__TextFont{
+        width: auto;
     }
     .aboutUs__ComponentText{
         font-size: 29px; /* kenytelen voltam 30px helyett ezt hasznalni, különben a 3. komponens szövege 1 sorral több lesz*/
@@ -209,11 +246,6 @@ TODO:
         margin-left: auto;
         margin-right: auto;
     }
-    /*.mySection{
-        max-width: 1800px;
-        margin-left: auto;
-        margin-right: auto;
-    }*/
     .maxContentWidht{
         max-width: 1800px;
         margin-left: auto;
@@ -226,7 +258,6 @@ TODO:
 /* ********* Media query ************ */
 /* ******* Light/Dark mode ********** */
 /* ********************************** */
-
 
 @media (prefers-color-scheme: dark) {
     body{
@@ -281,7 +312,14 @@ TODO:
     .weBuildWebsites__Text{
         text-shadow: 0px 0px 15px var(--color-Light);
     }
+
 }
+@media screen and (prefers-color-scheme: light) and (max-width: 980px) {
+    .weBuildWebsites__Link{
+        text-shadow: 0px 0px 1px var(--color-Light);
+    }
+}
+
 
 /* ********************************** */
 /* *************** Global *********** */
@@ -419,28 +457,15 @@ footer{
 /* ****** Oldal: Céginformáció **** */
 /* ******************************** */
 /* ------ Section: Weboldalakat epitünk ------*/
-.weBuildWebsites__Container{
-    height: 471px;
-    /*margin-top: 71px; */
-    margin-bottom: 80px;
 
-    /*Background-image*/
+.weBuildWebsites__Container{
+    display: flex;
     background-image: url(img/image1.png);
     background-repeat: no-repeat;
-    background-size: contain;
-
-    /*Parent-child viszony*/
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    
     position: relative; /* A link class-a miatt szükseges beallitas*/
 }
 .weBuildWebsites__Text{
-    font-size: 120px;
     font-weight: var(--fontWeight-M);
-    margin-right: calc(189px - 80px);
-    width: 724px; /* a reszponzivitashoz kenytelen voltam egy fix szelesseget megadni*/
 }
 .weBuildWebsites__Link{ /* ez nem követi a flexbox szabalyait */
     font-size: 24px;
@@ -494,7 +519,6 @@ footer{
     margin-top: 0;
     margin-bottom: 0;
 }
-
 
 /* ******************************** */
 /* ****** Oldal: Szolgaltatasok *** */
