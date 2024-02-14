@@ -142,6 +142,9 @@
     .font__Link--NavBar{
         font-weight: var(--fontWeight-S);
     }
+    .contact__Title{
+        margin: 32px 0;
+    }
     .contact__TextContainer{
         width: 100%;
     }
@@ -198,6 +201,10 @@
     }
     .weBuildWebsites__Link{
         visibility: visible;
+    }
+    .contact__Title{
+        margin-top: 71px;
+        margin-bottom: 50px;
     }
     .contact__TextFont{
         width: auto;
@@ -572,7 +579,9 @@ footer{
 /* ******************************** */
 .contact__ContentContainer{
     justify-content: space-between;
+    margin-top: 0;
 }
+
 .contact__TextFont{
     font-size: var(--fontSizeContact);
     font-style: italic;
