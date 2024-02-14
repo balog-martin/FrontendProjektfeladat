@@ -12,6 +12,15 @@
     --fontWeight-L: 700;
     --fontWeight-XL: 900;
 
+    /* Margins */
+    --marginTop-GeneralDesktop: 80px;
+    --marginLeftRight-GeneralDesktop: 80px;
+    --marginBottom-GeneralDesktop: 80px;
+
+    --marginTop-GeneralMobile: 32px;
+    --marginLeftRight-GeneralMobile: 32px;
+    --marginBottom-GeneralMobile: 32px;
+
     /* General color*/
     --color-Light: #FFF;
     --color-Dark: #121215;
@@ -68,7 +77,7 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
         flex-direction: column;
     } 
     .index__ChildContainer{
-        gap: 32px;
+        gap: var(--marginTop-GeneralMobile);
         align-items: center;
     }
     .index__LogoFont{
@@ -111,14 +120,14 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
 /* Mobile */
 @media screen and (max-width: 800px){  
     .mySection__Margin{
-        margin-top: 32px;
-        margin-left: 32px;
-        margin-right: 32px;
+        margin-top: var(--marginTop-GeneralMobile);
+        margin-left: var(--marginLeftRight-GeneralMobile);
+        margin-right: var(--marginLeftRight-GeneralMobile);
     }
     .mySection__ContentContainer{
         gap: 0px;
         row-gap: 64px;
-        margin-bottom: 32px;
+        margin-bottom: var(--marginBottom-GeneralMobile);
     }
     .mySection__Component{
         width: auto;
@@ -184,7 +193,7 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
         font-weight: var(--fontWeight-S);
     }
     .contact__Title{
-        margin: 32px 0;
+        margin: var(--marginTop-GeneralMobile) 0;
     }
     .contact__TextContainer{
         width: 100%;
@@ -196,12 +205,12 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
     .form__FirstContainer{
         align-items: stretch;
         flex-direction: column; 
-        gap: 32px;
+        gap: var(--marginTop-GeneralMobile);;
     }   
     .form__button{
         align-self: center;
-        margin-top: 32px;
-        margin-bottom: 32px;;
+        margin-top: var(--marginTop-GeneralMobile);;
+        margin-bottom: var(--marginBottom-GeneralMobile);;
     }
     footer{
         height: 200px;
@@ -217,14 +226,14 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
 /* Desktop */
 @media screen and (min-width: 801px){
     .mySection__Margin{
-        margin-top: 80px;
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-top: var(--marginTop-GeneralDesktop);
+        margin-left: var(--marginLeftRight-GeneralDesktop);
+        margin-right: var(--marginLeftRight-GeneralDesktop);
     }
     .mySection__ContentContainer{
         gap: 70px;
         row-gap: 50px;
-        margin-bottom: 80px;
+        margin-bottom: var(--marginBottom-GeneralDesktop);
     }
     .mySection__Component{
         width: 379px; 
@@ -233,7 +242,7 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
         align-items: center !important;
         justify-content: flex-end;
         height: 471px;
-        margin-bottom: 80px;
+        margin-bottom: var(--marginBottom-GeneralDesktop);
         background-size: contain;
     }
     .weBuildWebsites__Text{
@@ -555,7 +564,7 @@ footer{
 }
 /* ------ Section: Bemutatkozas ------*/
 .introduction__ContentContainer{
-    margin-top: 80px;
+    margin-top: var(--marginTop-GeneralDesktop);
     margin-bottom: 89px;
     flex-shrink: 0;
     row-gap: var(--fontSize-Default);
