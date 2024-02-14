@@ -154,6 +154,10 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
     .weBuildWebsites__Link{
         visibility: collapse;
     }
+    .introduction__ContentContainer{ /* mobile*/
+        /*margin-top: var(--marginTop-GeneralDesktop);
+        margin-bottom: 89px;*/
+    }
     .introduction__ContentContainer > p{
         font-size: 18px;
     }
@@ -251,6 +255,12 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
     }
     .weBuildWebsites__Link{
         visibility: visible;
+    }
+    .introduction__ContentContainer{ /* Desktop*/
+        margin-top: var(--marginTop-GeneralDesktop);
+        margin-left: 107px;
+        margin-right: 107px;
+        margin-bottom: 89px;
     }
     .introduction__ContentContainer > p{
         font-size: var(--fontSize-Default);
@@ -564,11 +574,9 @@ footer{
 }
 /* ------ Section: Bemutatkozas ------*/
 .introduction__ContentContainer{
-    margin-top: var(--marginTop-GeneralDesktop);
-    margin-bottom: 89px;
-    flex-shrink: 0;
     row-gap: var(--fontSize-Default);
 }
+
 .introduction__ContentContainer > p{
     font-weight: var(--fontWeight-M);
     row-gap: var(--fontSize-Default);
