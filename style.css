@@ -282,6 +282,9 @@
         height: 400px;
         width: 100%;
     }
+    .weBuildWebsites__Link{
+        visibility: collapse;
+    }
 }
 
 /* Desktop, extra szeles kepernyön*/
