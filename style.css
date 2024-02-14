@@ -115,6 +115,14 @@
     .weBuildWebsites__Link{
         visibility: collapse;
     }
+    .ourServices__Title{
+        visibility: collapse;
+        height: 0;
+        margin: 0;
+    }
+    .ourServices__ContentContainer{
+        margin-top: 26px;
+    }
     .contact__TextFont{
         width: 100%;
     }
@@ -551,6 +559,7 @@ footer{
 /* ******************************** */
 /* ****** Oldal: Szolgaltatasok *** */
 /* ******************************** */
+
 .ourServices__Component{
     gap: 32px;
 }
