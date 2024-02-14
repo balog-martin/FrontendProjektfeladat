@@ -1,11 +1,6 @@
-/*
-TODO:
-- aktiv oldal linkje felköver
-- valtozok: fontweight, fontsize stb (?)
-- mySection__Component 379px-es erteket valtozohoz rendelni (?)
-
-*/
-
+/* ********************************** */
+/* ************ Valtozok ************ */
+/* ********************************** */
 :root{
     /* Size */
     --fontSizeContact: 24px;
@@ -23,14 +18,13 @@ TODO:
     --color-Theme: #A0009B; 
     --color-ThemeAccent: #7000A0;
 
-    /* Light mode*/
+    /* Light mode color*/
     --lightMode-bg: linear-gradient(117deg, #EEEEF0, #CCCCD8);
     --lightMode-font: var(--color-Dark);
 
-    /* Dark mode*/
+    /* Dark mode color*/
     --darkMode-bg: linear-gradient(117deg, var(--color-Dark), var(--color-DarkAccent));
     --darkMode-font: var(--color-Light);
-
 }
 
 /* ********************************** */
@@ -192,7 +186,7 @@ TODO:
         width: 379px; 
     }
     .weBuildWebsites__Container{
-        align-items: center;
+        align-items: center !important;
         justify-content: flex-end;
         height: 471px;
         margin-bottom: 80px;
@@ -200,7 +194,6 @@ TODO:
     }
     .weBuildWebsites__Text{
         font-size: 120px;
-        /*margin-right: calc(189px - 80px);*/
         width: 724px; /* a reszponzivitashoz kenytelen voltam egy fix szelesseget megadni*/
     }
     .weBuildWebsites__Link{
@@ -294,7 +287,6 @@ TODO:
     }
 }
 
-
 /* ********************************** */
 /* ********* Media query ************ */
 /* ******* Light/Dark mode ********** */
@@ -360,7 +352,6 @@ TODO:
         text-shadow: 0px 0px 1px var(--color-Light);
     }
 }
-
 
 /* ********************************** */
 /* *************** Global *********** */
@@ -484,7 +475,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*width: 379px;*/
     max-width: 379px;
 }
 
@@ -515,13 +505,9 @@ footer{
 }
 /* ------ Section: Rolunk mondtak ------*/
 .aboutUs__Component{
-    /*gap: 50px;*/
     height: 436px;
-
-    /*flex-grow: 1;*/ /* Adaptivitas, külön hozzaadva. 1440px szelesseg felett a komponensek egyenlö aranyban töltik ki a parent div-et a kepernyö szelessegetöl függöen.*/
     align-self: stretch;  /* A ComponentName jobb-alulra igazitasahoz.*/
     position: relative;   /* A ComponentName jobb-alulra igazitasahoz.*/
-
     justify-content: space-between;
 }
 .aboutUs__ComponentImg{
@@ -588,8 +574,6 @@ footer{
     justify-content: space-between;
 }
 .contact__TextFont{
-    /*width: 500px;*/
-    /*max-width: 700px;*/
     font-size: var(--fontSizeContact);
     font-style: italic;
     font-weight: var(--fontWeight-M);
@@ -601,7 +585,7 @@ footer{
 .contact__TextContainer > div{
     margin-bottom: var(--fontSizeContact);
 }
-
+/*------------- Form ------------*/
 form{
     display: flex;
     flex-direction: column;
@@ -613,7 +597,6 @@ form{
     margin-bottom: 26px;
 }
 .form__Component{
-    /*width: 90%;*/
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
@@ -643,7 +626,6 @@ form{
 .form__button{
     width: 200px;
     height: 54px;
-
     border: none;
     font-size: 24px;
     font-weight: var(--fontWeight-L);
