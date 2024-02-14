@@ -165,8 +165,16 @@ TODO:
         margin-top: 32px;
         margin-bottom: 32px;;
     }
+    footer{
+        height: 200px;
+    }    
+    .footer__Text{
+        font-size: 40px;
+        font-weight: var(--fontWeight-L);
+        letter-spacing: 50px;
+        padding-left: 50px; /* a letter-spacing kompenzalasa miatt*/
+    }
 } 
-
 
 /* Desktop */
 @media screen and (min-width: 801px){
@@ -242,6 +250,16 @@ TODO:
         margin-top: 49px;
         margin-bottom: 49px;;
     }
+    footer{
+        height: 291px;
+    }
+    .footer__Text{
+        /*font-size: 120px;*/
+        font-size: calc(40px + (120 - 40) * ((100vw - 800px) / (1440 - 800)));;
+        font-weight: var(--fontWeight-M);
+        letter-spacing: 200px;
+        padding-left: 200px; /* a letter-spacing kompenzalasa miatt*/
+    }
 } 
 
 /* Desktop atmenet*/
@@ -270,6 +288,9 @@ TODO:
         max-width: 1800px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .footer__Text{
+        font-size: 180px;
     }
 }
 
@@ -394,17 +415,11 @@ body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizsz
 /* ********** Footer ************** */
 /* ******************************** */
 footer{
-    height: 291px;
     background: linear-gradient(90deg, var(--color-ThemeAccent) 0.01%, var(--color-Theme) 100%);
-
     position: relative;
 }
 .footer__Text{
-    font-size: 120px;
-    font-weight: var(--fontWeight-M);
-    letter-spacing: 200px;
     color: var(--color-Light);
-    
     margin: 0;
     position: absolute;
     top: 50%;
