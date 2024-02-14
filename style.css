@@ -3,7 +3,8 @@
 /* ********************************** */
 :root{
     /* Size */
-    --fontSizeContact: 24px;
+    --fontSize--Default: 24px;
+    --fontSize--Large: 40px; /* Titles, Links stb.*/
 
     /* Font-Weight*/
     --fontWeight-S: 100;
@@ -28,6 +29,35 @@
 }
 
 /* ********************************** */
+/* *************** Global *********** */
+/* ********************************** */
+body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizszintes scroll-bar.*/
+    margin: 0px;
+    width: auto; 
+}
+.font{
+    font-size: var(--fontSize--Default);
+    font-family: Roboto;
+}
+.font--bold{
+    font-weight: var(--fontWeight-L);
+}
+.font--underline{
+    text-decoration-line: underline;
+}
+.link{
+    text-decoration: none; /* megszünteti a default-alahuzast*/
+    color: inherit;  /* atveszi a szövegnek beallitott class-t a default ronda kék helyett*/
+}
+.link:hover{
+    opacity: 0.6;
+    transition: .1s;
+}
+.linkActive{
+    font-weight: var(--fontWeight-L);
+}
+
+/* ********************************** */
 /* ******** Media queries *********** */
 /*  Mobile first, target width 360px  */
 /* ********************************** */
@@ -47,7 +77,7 @@
         letter-spacing: 10px;
     }
     .index__LinkFont{
-        font-size: 40px;
+        font-size: var(--fontSize--Large);
     }
     .index__Line{
         width: 100vw;
@@ -115,6 +145,9 @@
     .weBuildWebsites__Link{
         visibility: collapse;
     }
+    .introduction__ContentContainer > p{
+        font-size: 18px;
+    }
     .ourServices__Title{
         visibility: collapse;
         height: 0;
@@ -127,7 +160,7 @@
         width: 100%;
     }
     .aboutUs__ComponentText{
-        font-size: 24px;
+        font-size: var(--fontSize--Default);
     }
     .myHeader{
         padding: 8px 24px;
@@ -174,7 +207,7 @@
         height: 200px;
     }    
     .footer__Text{
-        font-size: 40px;
+        font-size: var(--fontSize--Large);
         font-weight: var(--fontWeight-L);
         letter-spacing: 50px;
         padding-left: 50px; /* a letter-spacing kompenzalasa miatt*/
@@ -210,6 +243,9 @@
     .weBuildWebsites__Link{
         visibility: visible;
     }
+    .introduction__ContentContainer > p{
+        font-size: var(--fontSize--Default);
+    }
     .contact__Title{
         margin-top: 71px;
         margin-bottom: 50px;
@@ -225,7 +261,7 @@
         padding: 0px 32px;
     }
     .header__Logo--Desktop{
-        font-size: 40px;
+        font-size: var(--fontSize--Large);
         font-weight: var(--fontWeight-S);
         visibility: visible;
     }
@@ -376,36 +412,7 @@
     }
 }
 
-/* ********************************** */
-/* *************** Global *********** */
-/* ********************************** */
-body{ /* Ezek nelkül megjelenik oldalt egy par pixeles margin vagy alul a vizszintes scroll-bar.*/
-    margin: 0px;
-    width: auto; 
-}
-.font{
-    font-family: Roboto;
-}
-.font--bold{
-    font-weight: var(--fontWeight-L);
-}
-.font--underline{
-    text-decoration-line: underline;
-}
-.font__Link--NavBar{
-    font-size: 24px;
-}
-.link{
-    text-decoration: none; /* megszünteti a default-alahuzast*/
-    color: inherit;  /* atveszi a szövegnek beallitott class-t a default ronda kék helyett*/
-}
-.link:hover{
-    opacity: 0.6;
-    transition: .1s;
-}
-.linkActive{
-    font-weight: var(--fontWeight-L);
-}
+
 
 /* ******************************** */
 /* ********** Header *********** */
@@ -483,7 +490,7 @@ footer{
     align-items: stretch;
 }
 .mySection__Title{
-    font-size: 40px;
+    font-size: var(--fontSize--Large);
     font-style: italic;
     text-align: center;
 }
@@ -515,7 +522,6 @@ footer{
     font-weight: var(--fontWeight-M);
 }
 .weBuildWebsites__Link{ /* ez nem követi a flexbox szabalyait */
-    font-size: 24px;
     font-weight: var(--fontWeight-S);
     text-decoration-line: underline;
     text-wrap: nowrap;
@@ -544,7 +550,6 @@ footer{
 }
 .aboutUs__ComponentName{
     color: var(--color-ThemeAccent);
-    font-size: 24px;
     font-weight: var(--fontWeight-M);
     align-self: flex-end;
 }
@@ -553,12 +558,11 @@ footer{
     margin-top: 80px;
     margin-bottom: 89px;
     flex-shrink: 0;
-    row-gap: var(--fontSizeContact);
+    row-gap: var(--fontSize--Default);
 }
 .introduction__ContentContainer > p{
-    font-size: 24px;
     font-weight: var(--fontWeight-M);
-    row-gap: var(--fontSizeContact);
+    row-gap: var(--fontSize--Default);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -574,7 +578,6 @@ footer{
 }
 .ourServices__ComponentTitle{
     text-align: center;
-    font-size: 24px;
     font-weight: var(--fontWeight-L);
 }
 .ourServices__TitleWidth--Small{
@@ -584,7 +587,6 @@ footer{
     width: 310px;
 }
 .ourServices__ComponentText{
-    font-size: 24px;
     font-weight: var(--fontWeight-M); 
 }
 
@@ -595,9 +597,8 @@ footer{
     justify-content: space-between;
     margin-top: 0;
 }
-
 .contact__TextFont{
-    font-size: var(--fontSizeContact);
+    font-size: var(--fontSize--Default);
     font-style: italic;
     font-weight: var(--fontWeight-M);
 }
@@ -606,7 +607,7 @@ footer{
     margin-bottom: 0px;
 }
 .contact__TextContainer > div{
-    margin-bottom: var(--fontSizeContact);
+    margin-bottom: var(--fontSize--Default);
 }
 /*------------- Form ------------*/
 form{
@@ -628,10 +629,8 @@ form{
 }
 .form__label{
     margin-bottom: 15px;
-    font-size: 12px;
     white-space: nowrap;
     text-align: left;
-    font-size: 24px;
     font-weight: var(--fontWeight-L);
 }
 .form__input{
@@ -650,7 +649,7 @@ form{
     width: 200px;
     height: 54px;
     border: none;
-    font-size: 24px;
+    font-size: var(--fontSize--Default);
     font-weight: var(--fontWeight-L);
     color: var(--color-Light);
     background: linear-gradient(90deg, var(--color-ThemeAccent) 0.76%, var(--color-Theme) 99.64%);
