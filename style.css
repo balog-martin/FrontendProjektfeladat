@@ -327,7 +327,8 @@
         /* Ez a modszer müködött csak az ikono szinenek valtasahoz dark/light mode alapjan.
         Idö hianyaban mar nem talaltam olyan modszert, 
         amivel az img tagben meghivatkozott svg-t lehetne css-böl formazni...
-        Igy kenytelen voltam az SVG-t copy-paste-tel a HTML-be rakni es ID-n keresztül definialni a szint */
+        Igy kenytelen voltam az SVG-t copy-paste-tel a HTML-be rakni es ID-n keresztül definialni a szint.
+        Hogy erdemes ezt elegansabban csinalni? */
         fill: var(--darkMode-font);  
         color: var(--darkMode-font); 
     }
@@ -504,7 +505,6 @@ footer{
 /* ****** Oldal: Céginformáció **** */
 /* ******************************** */
 /* ------ Section: Weboldalakat epitünk ------*/
-
 .weBuildWebsites__Container{
     display: flex;
     background-image: url(img/image1.png);
