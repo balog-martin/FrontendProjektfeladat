@@ -48,7 +48,8 @@ TODO:
         align-items: center;
     }
     .index__LogoFont{
-        font-size: 48px;
+        /*font-size: 48px;*/
+        font-size: calc(48px + (64 - 48) * ((100vw - 365px) / (800 - 365)));
         letter-spacing: 10px;
     }
     .index__LinkFont{
